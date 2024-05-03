@@ -95,7 +95,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('Jadwals');?>" class="nav-link">
+                            <a href="<?php echo site_url('datalanggarkelas');?>" class="nav-link">
                                 <i class="nav-icon fas fa-book"></i>
                                 <p>
                                     Data Pelanggaran
