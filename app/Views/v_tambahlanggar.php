@@ -155,7 +155,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Data Pelanggaran Siswa</h1>
+                            <h1 class="m-0">Tambah Data Pelanggaran Siswa</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
@@ -170,74 +170,32 @@
 
             <!-- Main content -->
             <div class="content">
-
-                <!-- Tabel Kelas -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header">
-                            <a href="<?php echo site_url('tambahlanggar'); ?>" class="btn btn-success"><i class="fas fa-plus"></i> Data Pelanggaran</a>
-                                <div class="card-tools">
-                                    <div class="input-group input-group-sm" style="width: 150px;">
-                                        <input type="text" name="table_search" class="form-control float-right"
-                                            placeholder="Search">
-
-                                        <div class="input-group-append">
-                                            <button type="submit" class="btn btn-default">
-                                                <i class="fas fa-search"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.card-header -->
-                            <div class="card-body table-responsive p-0">
-                                <table class="table table-hover text-nowrap">
-                                    <thead>
-                                        <tr>
-                                            <th>Nomor</th>
-                                            <th>Pelanggaran</th>
-                                            <th>Tanggal</th>
-                                            <th>Poin</th>
-                                            <th>Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Shiella Dwi Lestari</td>
-                                            <td>8.8</td>
-                                            <td>12345</td>
-                                            <td>
-                                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                                                    data-target="#deleteModal"><i class="fas fa-trash-alt"></i>
-                                                    Hapus</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Emirssyah Putra</td>
-                                            <td>8.1</td>
-                                            <td>8 Desember 2024</td>
-                                            <td>
-                                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                                                    data-target="#deleteModal"><i class="fas fa-trash-alt"></i>
-                                                    Hapus</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
-                            <!-- /.card-body -->
+                <div>
+                    <form class="forms-sample" method="post" action="">
+                        <div class="form-group">
+                            <label for="exampleInputUsername1">Pelanggaran</label>
+                            <input type="text" class="form-control" id="exampleInputUsername1" name="pelanggaran"
+                                placeholder="Pelanggaran" value="" required>
                         </div>
-                        <!-- /.card -->
-                    </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail">Tanggal</label>
+                            <input type="Date" class="form-control" name="tanggal" placeholder="Tanggal" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPoin">Poin</label>
+                            <div class="password-container">
+                                <input type="text" class="form-control" name="poin" placeholder="Poin" value="" required
+                                    style="padding-right: 50px;">
+                            </div>
+                        </div>
+                        <a class="btn btn-danger btn-icon-text" href="<?php echo site_url('Dashboard'); ?>">Batal</a>
+                        <button type="submit" class="btn btn-warning btn-icon-text">Simpan</button>
+                    </form>
+
                 </div>
+                <!-- /.container-fluid -->
             </div>
-            <!-- /.content -->
         </div>
-        <!-- /.content-wrapper -->
 
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
