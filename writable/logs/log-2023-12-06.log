@@ -1,0 +1,705 @@
+CRITICAL - 2023-12-06 09:33:25 --> Invalid file: "admin/v_views_file.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/v_views_file.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/v_views_file', [], true)
+ 3 APPPATH\Controllers\DetailPendaftar.php(29): view('admin/v_views_file', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701855107_cf9ebe3f96e0708d4092.pdf')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 09:33:25 --> Invalid file: "admin/v_views_file.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/v_views_file.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/v_views_file', [], true)
+ 3 APPPATH\Controllers\DetailPendaftar.php(29): view('admin/v_views_file', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701855107_cf9ebe3f96e0708d4092.pdf')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 09:33:25 --> Invalid file: "admin/v_views_file.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/v_views_file.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/v_views_file', [], true)
+ 3 APPPATH\Controllers\DetailPendaftar.php(29): view('admin/v_views_file', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701855107_cf9ebe3f96e0708d4092.pdf')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 09:33:25 --> Invalid file: "admin/v_views_file.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/v_views_file.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/v_views_file', [], true)
+ 3 APPPATH\Controllers\DetailPendaftar.php(29): view('admin/v_views_file', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701855107_cf9ebe3f96e0708d4092.pdf')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 09:33:28 --> Invalid file: "admin/v_views_file.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/v_views_file.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/v_views_file', [], true)
+ 3 APPPATH\Controllers\DetailPendaftar.php(29): view('admin/v_views_file', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701855107_cf9ebe3f96e0708d4092.pdf')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 10:32:06 --> Class 'App\Models\M_Career' not found
+in APPPATH/Controllers/Home.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 10:32:21 --> Class 'App\Models\M_Career' not found
+in APPPATH/Controllers/Home.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 10:32:47 --> Class 'App\Models\M_Career' not found
+in APPPATH/Controllers/Home.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 10:33:04 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'loergrou_loergroup'@'localhost' to database 'loergrou_loergroup' in /home/loergrou/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/loergrou/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'loergrou_loergr...', '2s%Yxq_aRzYB', 'loergrou_loergr...', 3306, '', 0)
+#1 /home/loergrou/public_html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/loergrou/public_html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/loergrou/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/loergrou/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/loergrou/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 /home/loergrou/public_html/app/Models/M_Career.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/loergrou/public_html/app/Controllers/Home.php(12): App\Models\M_career->get_lowongan_berjalan()
+#8 /home/loergrou/public_html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#9 /home/loergrou/public_html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /home/loergrou/public_html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' to database '****' in /home/loergrou/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/loergrou/public_html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/loergrou/public_html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/loergrou/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/loergrou/public_html/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/loergrou/public_html/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 /home/loergrou/public_html/app/Models/M_Career.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/loergrou/public_html/app/Controllers/Home.php(12): App\Models\M_career->get_lowongan_berjalan()
+#7 /home/loergrou/public_html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#8 /home/loergrou/public_html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home/loergrou/public_html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-06 10:33:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' to database '****'
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lowongan_pekerjaan`
+WHERE `waktu_mulai` <= :waktu_mulai:
+AND `waktu_akhir` >= :waktu_akhir:', [...], false)
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/M_Career.php(25): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Home.php(12): App\Models\M_career->get_lowongan_berjalan()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 10:37:09 --> Class 'App\Models\M_career' not found
+in APPPATH/Controllers/Career.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Career->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Career))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 10:37:50 --> Class 'App\Models\M_Career' not found
+in APPPATH/Controllers/Home.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 10:38:35 --> Invalid file: "admin/v_dashboard.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/v_dashboard.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 3 APPPATH/Controllers/Dashboard.php(24): view('admin/v_dashboard', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 10:39:44 --> Invalid file: "admin/v_job.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/v_job.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/v_job', [], true)
+ 3 APPPATH/Controllers/Job.php(16): view('admin/v_job', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Job->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Job))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 10:44:02 --> Class 'App\Models\M_Register' not found
+in APPPATH/Controllers/Register.php on line 104.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Register->verifyProcess()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 10:50:08 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(83): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(151): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(10): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 10:52:29 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-06 10:52:30 --> Uncaught Error: Class "Locale" not found in /home/loergrou/public_html/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /home/loergrou/public_html/system/Helpers/number_helper.php(55): format_number()
+#1 /home/loergrou/public_html/system/Debug/BaseExceptionHandler.php(145): number_to_size()
+#2 /home/loergrou/public_html/app/Views/errors/html/error_exception.php(360): CodeIgniter\Debug\BaseExceptionHandler::describeMemory()
+#3 /home/loergrou/public_html/system/Debug/BaseExceptionHandler.php(241): include('/home/loergrou/...')
+#4 /home/loergrou/public_html/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /home/loergrou/public_html/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render()
+#6 /home/loergrou/public_html/system/Debug/Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#8 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /home/loergrou/public_html/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 /home/loergrou/public_html/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /home/loergrou/public_html/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-06 10:52:31 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH/CodeIgniter.php on line 252.
+ 1 SYSTEMPATH/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-06 10:52:31 --> Uncaught Error: Class "Locale" not found in /home/loergrou/public_html/system/Helpers/number_helper.php:136
+Stack trace:
+#0 /home/loergrou/public_html/system/Helpers/number_helper.php(55): format_number()
+#1 /home/loergrou/public_html/system/Debug/BaseExceptionHandler.php(145): number_to_size()
+#2 /home/loergrou/public_html/app/Views/errors/html/error_exception.php(360): CodeIgniter\Debug\BaseExceptionHandler::describeMemory()
+#3 /home/loergrou/public_html/system/Debug/BaseExceptionHandler.php(241): include('/home/loergrou/...')
+#4 /home/loergrou/public_html/system/Debug/BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 /home/loergrou/public_html/system/Debug/ExceptionHandler.php(112): CodeIgniter\Debug\BaseExceptionHandler->render()
+#6 /home/loergrou/public_html/system/Debug/Exceptions.php(149): CodeIgniter\Debug\ExceptionHandler->handle()
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#8 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 /home/loergrou/public_html/system/CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 /home/loergrou/public_html/system/CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /home/loergrou/public_html/public/index.php(67): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH/Helpers/number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-06 11:03:38 --> Invalid file: "v_career.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Career.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Career->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:03:41 --> Invalid file: "v_career.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Career.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Career->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:03:46 --> Invalid file: "v_career.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Career.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Career->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:03:51 --> Invalid file: "v_career.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Career.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Career->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:04:42 --> Invalid file: "v_career.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Career.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Career->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:04:51 --> Invalid file: "v_career.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Career.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Career->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:07:01 --> Invalid file: "v_career.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Career.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Career->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:07:01 --> Invalid file: "v_career.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Career.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Career->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:09:26 --> Invalid file: "v_career.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_career.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('v_career', [], true)
+ 3 APPPATH/Controllers/Career.php(13): view('v_career', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Career->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Career))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:09:30 --> Invalid file: "v_career.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_career.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('v_career', [], true)
+ 3 APPPATH/Controllers/Career.php(13): view('v_career', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Career->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Career))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:23:01 --> syntax error, unexpected token "if"
+in APPPATH/Config/Routes.php on line 64.
+ 1 SYSTEMPATH/CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:23:05 --> syntax error, unexpected token "if"
+in APPPATH/Config/Routes.php on line 64.
+ 1 SYSTEMPATH/CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:23:07 --> syntax error, unexpected token "if"
+in APPPATH/Config/Routes.php on line 64.
+ 1 SYSTEMPATH/CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:23:09 --> syntax error, unexpected token "if"
+in APPPATH/Config/Routes.php on line 64.
+ 1 SYSTEMPATH/CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:23:09 --> syntax error, unexpected token "if"
+in APPPATH/Config/Routes.php on line 64.
+ 1 SYSTEMPATH/CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:23:21 --> syntax error, unexpected token "if"
+in APPPATH/Config/Routes.php on line 64.
+ 1 SYSTEMPATH/CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:23:44 --> syntax error, unexpected 'if' (T_IF)
+in APPPATH/Config/Routes.php on line 64.
+ 1 SYSTEMPATH/CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:24:10 --> syntax error, unexpected 'if' (T_IF)
+in APPPATH/Config/Routes.php on line 64.
+ 1 SYSTEMPATH/CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:24:11 --> syntax error, unexpected 'if' (T_IF)
+in APPPATH/Config/Routes.php on line 64.
+ 1 SYSTEMPATH/CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:24:11 --> syntax error, unexpected 'if' (T_IF)
+in APPPATH/Config/Routes.php on line 64.
+ 1 SYSTEMPATH/CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:24:12 --> syntax error, unexpected 'if' (T_IF)
+in APPPATH/Config/Routes.php on line 64.
+ 1 SYSTEMPATH/CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:24:12 --> syntax error, unexpected 'if' (T_IF)
+in APPPATH/Config/Routes.php on line 64.
+ 1 SYSTEMPATH/CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:27:09 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(83): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(151): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(10): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:27:11 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(83): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(151): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(10): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:27:12 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(83): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(151): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(10): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:27:35 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(83): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(151): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(10): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:51:39 --> Class "App\Models\M_Career" not found
+in APPPATH/Controllers/pHome.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\pHome->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pHome))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:52:15 --> Class "App\Models\M_Career" not found
+in APPPATH/Controllers/pHome.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\pHome->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pHome))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:52:34 --> Class "App\Models\M_Career" not found
+in APPPATH/Controllers/pHome.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\pHome->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pHome))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 11:52:45 --> Class "App\Models\M_Career" not found
+in APPPATH/Controllers/pHome.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\pHome->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pHome))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 14:22:11 --> Class "App\Models\M_Apply" not found
+in APPPATH/Controllers/Apply.php on line 55.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 14:24:15 --> File not found: "/home/loergrou/public_html/public/doc\1701872609_65deac06e15c7e875317.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc\\1701872609_65deac06e15c7e875317.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc\\1701872609_65deac06e15c7e875317.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc\\1701872609_65deac06e15c7e875317.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(24): CodeIgniter\HTTP\Response->download('doc\\1701872609_65deac06e15c7e875317.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701872609_65deac06e15c7e875317.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 14:24:25 --> File not found: "/home/loergrou/public_html/public/doc\1701872608_889e10afeb2a8bcfd401.pdf"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc\\1701872608_889e10afeb2a8bcfd401.pdf')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc\\1701872608_889e10afeb2a8bcfd401.pdf', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc\\1701872608_889e10afeb2a8bcfd401.pdf')
+ 4 APPPATH/Controllers/DetailPendaftar.php(24): CodeIgniter\HTTP\Response->download('doc\\1701872608_889e10afeb2a8bcfd401.pdf', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701872608_889e10afeb2a8bcfd401.pdf')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 14:26:02 --> File not found: "/home/loergrou/public_html/public/doc\1701872609_65deac06e15c7e875317.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc\\1701872609_65deac06e15c7e875317.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc\\1701872609_65deac06e15c7e875317.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc\\1701872609_65deac06e15c7e875317.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(24): CodeIgniter\HTTP\Response->download('doc\\1701872609_65deac06e15c7e875317.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701872609_65deac06e15c7e875317.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 14:28:26 --> File not found: "/home/loergrou/public_html/public/doc\1701872873_e51347c5ec433f1816d1.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(24): CodeIgniter\HTTP\Response->download('doc\\1701872873_e51347c5ec433f1816d1.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701872873_e51347c5ec433f1816d1.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 14:32:19 --> File not found: "/home/loergrou/public_html/public/doc\1701872873_e51347c5ec433f1816d1.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(24): CodeIgniter\HTTP\Response->download('doc\\1701872873_e51347c5ec433f1816d1.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701872873_e51347c5ec433f1816d1.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 14:33:00 --> File not found: "/home/loergrou/public_html/public/doc\1701872873_e51347c5ec433f1816d1.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(24): CodeIgniter\HTTP\Response->download('doc\\1701872873_e51347c5ec433f1816d1.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701872873_e51347c5ec433f1816d1.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 14:33:01 --> File not found: "/home/loergrou/public_html/public/doc\1701872873_e51347c5ec433f1816d1.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(24): CodeIgniter\HTTP\Response->download('doc\\1701872873_e51347c5ec433f1816d1.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701872873_e51347c5ec433f1816d1.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 14:33:02 --> File not found: "/home/loergrou/public_html/public/doc\1701872873_e51347c5ec433f1816d1.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(24): CodeIgniter\HTTP\Response->download('doc\\1701872873_e51347c5ec433f1816d1.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701872873_e51347c5ec433f1816d1.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 14:33:02 --> File not found: "/home/loergrou/public_html/public/doc\1701872873_e51347c5ec433f1816d1.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(24): CodeIgniter\HTTP\Response->download('doc\\1701872873_e51347c5ec433f1816d1.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701872873_e51347c5ec433f1816d1.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 14:33:03 --> File not found: "/home/loergrou/public_html/public/doc\1701872873_e51347c5ec433f1816d1.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(24): CodeIgniter\HTTP\Response->download('doc\\1701872873_e51347c5ec433f1816d1.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701872873_e51347c5ec433f1816d1.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 14:33:03 --> File not found: "/home/loergrou/public_html/public/doc\1701872873_e51347c5ec433f1816d1.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(24): CodeIgniter\HTTP\Response->download('doc\\1701872873_e51347c5ec433f1816d1.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701872873_e51347c5ec433f1816d1.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 14:33:04 --> File not found: "/home/loergrou/public_html/public/doc\1701872873_e51347c5ec433f1816d1.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(24): CodeIgniter\HTTP\Response->download('doc\\1701872873_e51347c5ec433f1816d1.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701872873_e51347c5ec433f1816d1.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 14:33:04 --> File not found: "/home/loergrou/public_html/public/doc\1701872873_e51347c5ec433f1816d1.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(24): CodeIgniter\HTTP\Response->download('doc\\1701872873_e51347c5ec433f1816d1.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701872873_e51347c5ec433f1816d1.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 14:33:05 --> File not found: "/home/loergrou/public_html/public/doc\1701872873_e51347c5ec433f1816d1.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc\\1701872873_e51347c5ec433f1816d1.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(24): CodeIgniter\HTTP\Response->download('doc\\1701872873_e51347c5ec433f1816d1.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1701872873_e51347c5ec433f1816d1.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 14:36:53 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`)) in /home/loergrou/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/loergrou/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query('DELETE FROM `lo...', 0)
+#1 /home/loergrou/public_html/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `lo...')
+#2 /home/loergrou/public_html/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `lo...')
+#3 /home/loergrou/public_html/system/Database/BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `lo...', Array, false)
+#4 /home/loergrou/public_html/system/Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 /home/loergrou/public_html/system/BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 /home/loergrou/public_html/app/Controllers/Job.php(43): CodeIgniter\BaseModel->delete(Array)
+#7 /home/loergrou/public_html/system/CodeIgniter.php(942): App\Controllers\Job->hapus('JOB0001')
+#8 /home/loergrou/public_html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Job))
+#9 /home/loergrou/public_html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-06 14:36:54 --> Cannot delete or update a parent row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `lowongan_pekerjaan`
+WHERE `id_loker` IN :id_loker:', [...], false)
+ 2 SYSTEMPATH/Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH/Controllers/Job.php(43): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Job->hapus('JOB0001')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Job))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 14:37:09 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`)) in /home/loergrou/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/loergrou/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query('DELETE FROM `lo...', 0)
+#1 /home/loergrou/public_html/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `lo...')
+#2 /home/loergrou/public_html/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `lo...')
+#3 /home/loergrou/public_html/system/Database/BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `lo...', Array, false)
+#4 /home/loergrou/public_html/system/Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 /home/loergrou/public_html/system/BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 /home/loergrou/public_html/app/Controllers/Job.php(43): CodeIgniter\BaseModel->delete(Array)
+#7 /home/loergrou/public_html/system/CodeIgniter.php(942): App\Controllers\Job->hapus('JOB0001')
+#8 /home/loergrou/public_html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Job))
+#9 /home/loergrou/public_html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-06 14:37:09 --> Cannot delete or update a parent row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `lowongan_pekerjaan`
+WHERE `id_loker` IN :id_loker:', [...], false)
+ 2 SYSTEMPATH/Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH/Controllers/Job.php(43): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Job->hapus('JOB0001')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Job))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 21:44:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_2` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`)) in /home/loergrou/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/loergrou/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `fo...', 0)
+#1 /home/loergrou/public_html/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fo...')
+#2 /home/loergrou/public_html/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fo...')
+#3 /home/loergrou/public_html/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fo...', Array, false)
+#4 /home/loergrou/public_html/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/loergrou/public_html/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /home/loergrou/public_html/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/loergrou/public_html/app/Controllers/Apply.php(114): CodeIgniter\Model->insert(Array)
+#8 /home/loergrou/public_html/system/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+#9 /home/loergrou/public_html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+#10 /home/loergrou/public_html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-06 21:44:56 --> Cannot add or update a child row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_2` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `form_pendaftaran` (`id_pengguna`, `nama`, `email`, `jenkel`, `tempat_lahir`, `tanggal_lahir`, `pend`, `no_telp`, `no_hp`, `alamat`, `linkedin`, `id_loker`, `waktu_apply`, `id_form`, `surat_lamaran`, `cv`, `ktp`, `ijazah`) VALUES (:id_pengguna:, :nama:, :email:, :jenkel:, :tempat_lahir:, :tanggal_lahir:, :pend:, :no_telp:, :no_hp:, :alamat:, :linkedin:, :id_loker:, :waktu_apply:, :id_form:, :surat_lamaran:, :cv:, :ktp:, :ijazah:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Apply.php(114): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 14:47:49 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`)) in /home/loergrou/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/loergrou/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query('DELETE FROM `lo...', 0)
+#1 /home/loergrou/public_html/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `lo...')
+#2 /home/loergrou/public_html/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `lo...')
+#3 /home/loergrou/public_html/system/Database/BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `lo...', Array, false)
+#4 /home/loergrou/public_html/system/Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 /home/loergrou/public_html/system/BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 /home/loergrou/public_html/app/Controllers/Job.php(43): CodeIgniter\BaseModel->delete(Array)
+#7 /home/loergrou/public_html/system/CodeIgniter.php(942): App\Controllers\Job->hapus('JOB0001')
+#8 /home/loergrou/public_html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Job))
+#9 /home/loergrou/public_html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-06 14:47:49 --> Cannot delete or update a parent row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `lowongan_pekerjaan`
+WHERE `id_loker` IN :id_loker:', [...], false)
+ 2 SYSTEMPATH/Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH/Controllers/Job.php(43): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Job->hapus('JOB0001')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Job))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 14:47:58 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`)) in /home/loergrou/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/loergrou/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query('DELETE FROM `lo...', 0)
+#1 /home/loergrou/public_html/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `lo...')
+#2 /home/loergrou/public_html/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `lo...')
+#3 /home/loergrou/public_html/system/Database/BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `lo...', Array, false)
+#4 /home/loergrou/public_html/system/Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 /home/loergrou/public_html/system/BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 /home/loergrou/public_html/app/Controllers/Job.php(43): CodeIgniter\BaseModel->delete(Array)
+#7 /home/loergrou/public_html/system/CodeIgniter.php(942): App\Controllers\Job->hapus('JOB0001')
+#8 /home/loergrou/public_html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Job))
+#9 /home/loergrou/public_html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-06 14:47:58 --> Cannot delete or update a parent row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `lowongan_pekerjaan`
+WHERE `id_loker` IN :id_loker:', [...], false)
+ 2 SYSTEMPATH/Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH/Controllers/Job.php(43): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Job->hapus('JOB0001')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Job))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^testing\.loergroup\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.testing\.loergroup\.com$
+RewriteRule ^/?$ "https\:\/\/testing\.loergroup\.com\/public" [R=301,L]
+

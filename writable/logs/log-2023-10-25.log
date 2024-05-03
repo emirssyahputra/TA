@@ -1,0 +1,213 @@
+CRITICAL - 2023-10-25 07:57:41 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\Login.php on line 24.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('Login', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('Login')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('Login')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 07:58:08 --> Class "App\Models\M_Login" not found
+in APPPATH\Controllers\Login.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 07:58:58 --> Class "App\Models\M_Login" not found
+in APPPATH\Controllers\Login.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 08:04:30 --> Invalid file: "admin/v_login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/v_login.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/v_login', [], true)
+ 3 APPPATH\Controllers\Login.php(18): view('admin/v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 08:20:09 --> Undefined property: App\Controllers\Login::$M_login
+in APPPATH\Controllers\Login.php on line 30.
+ 1 APPPATH\Controllers\Login.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$M_login', 'C:\\xampp\\htdocs\\PTI\\app\\Controllers\\Login.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 08:25:22 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\PTI\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\PTI\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\PTI\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\PTI\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\PTI\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\PTI\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PTI\app\Models\M_login.php(17): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\PTI\app\Controllers\Login.php(31): App\Models\M_Login->cekadmin('', 'emirss1234')
+#7 C:\xampp\htdocs\PTI\system\CodeIgniter.php(942): App\Controllers\Login->auth()
+#8 C:\xampp\htdocs\PTI\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\PTI\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\PTI\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\PTI\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\PTI\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\PTI\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\PTI\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\PTI\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\PTI\app\Models\M_login.php(17): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\PTI\app\Controllers\Login.php(31): App\Models\M_Login->cekadmin('', 'emirss1234')
+#6 C:\xampp\htdocs\PTI\system\CodeIgniter.php(942): App\Controllers\Login->auth()
+#7 C:\xampp\htdocs\PTI\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\PTI\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\PTI\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-25 08:25:22 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_pengguna`
+WHERE `pengguna_username` = :pengguna_username:
+AND `pengguna_password` = :pengguna_password:', [...], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\M_login.php(17): CodeIgniter\Model->__call('get', [])
+ 5 APPPATH\Controllers\Login.php(31): App\Models\M_Login->cekadmin('', 'emirss1234')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 08:38:19 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\PTI\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\PTI\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\PTI\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\PTI\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\PTI\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\PTI\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PTI\app\Models\M_login.php(17): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\PTI\app\Controllers\Login.php(31): App\Models\M_Login->cekadmin('Mega@gmail.com', 'mega1234')
+#7 C:\xampp\htdocs\PTI\system\CodeIgniter.php(942): App\Controllers\Login->auth()
+#8 C:\xampp\htdocs\PTI\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\PTI\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\PTI\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\PTI\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\PTI\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\PTI\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\PTI\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\PTI\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\PTI\app\Models\M_login.php(17): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\PTI\app\Controllers\Login.php(31): App\Models\M_Login->cekadmin('Mega@gmail.com', 'mega1234')
+#6 C:\xampp\htdocs\PTI\system\CodeIgniter.php(942): App\Controllers\Login->auth()
+#7 C:\xampp\htdocs\PTI\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\PTI\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\PTI\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-25 08:38:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_pengguna`
+WHERE `pengguna_username` = :pengguna_username:
+AND `pengguna_password` = :pengguna_password:', [...], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\M_login.php(17): CodeIgniter\Model->__call('get', [])
+ 5 APPPATH\Controllers\Login.php(31): App\Models\M_Login->cekadmin('Mega@gmail.com', 'mega1234')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 08:42:43 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\PTI\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\PTI\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\PTI\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\PTI\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\PTI\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\PTI\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PTI\app\Models\M_login.php(17): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\PTI\app\Controllers\Login.php(31): App\Models\M_Login->cekadmin('Mega@gmail.com', 'mega1234')
+#7 C:\xampp\htdocs\PTI\system\CodeIgniter.php(942): App\Controllers\Login->auth()
+#8 C:\xampp\htdocs\PTI\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\PTI\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\PTI\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\PTI\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\PTI\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\PTI\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\PTI\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\PTI\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\PTI\app\Models\M_login.php(17): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\PTI\app\Controllers\Login.php(31): App\Models\M_Login->cekadmin('Mega@gmail.com', 'mega1234')
+#6 C:\xampp\htdocs\PTI\system\CodeIgniter.php(942): App\Controllers\Login->auth()
+#7 C:\xampp\htdocs\PTI\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\PTI\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\PTI\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-25 08:42:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_pengguna`
+WHERE `pengguna_username` = :pengguna_username:
+AND `pengguna_password` = :pengguna_password:', [...], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\M_login.php(17): CodeIgniter\Model->__call('get', [])
+ 5 APPPATH\Controllers\Login.php(31): App\Models\M_Login->cekadmin('Mega@gmail.com', 'mega1234')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 09:05:54 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\PTI\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\PTI\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\PTI\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\PTI\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\PTI\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\PTI\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PTI\app\Models\M_login.php(17): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\PTI\app\Controllers\Login.php(31): App\Models\M_Login->cekadmin('Mega@gmail.com', 'mega1234')
+#7 C:\xampp\htdocs\PTI\system\CodeIgniter.php(942): App\Controllers\Login->auth()
+#8 C:\xampp\htdocs\PTI\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\PTI\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\PTI\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\PTI\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\PTI\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\PTI\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\PTI\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\PTI\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\PTI\app\Models\M_login.php(17): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\PTI\app\Controllers\Login.php(31): App\Models\M_Login->cekadmin('Mega@gmail.com', 'mega1234')
+#6 C:\xampp\htdocs\PTI\system\CodeIgniter.php(942): App\Controllers\Login->auth()
+#7 C:\xampp\htdocs\PTI\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\PTI\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\PTI\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-25 09:05:54 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengguna`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\M_login.php(17): CodeIgniter\Model->__call('get', [])
+ 5 APPPATH\Controllers\Login.php(31): App\Models\M_Login->cekadmin('Mega@gmail.com', 'mega1234')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+in APPPATH\Controllers\Login.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
