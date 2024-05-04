@@ -77,7 +77,7 @@
                with font-awesome or any other icon font library -->
 
                <li class="nav-item">
-                            <a href="<?php echo site_url('Dashboardg');?>" class="nav-link ">
+                            <a href="<?php echo site_url('Dashboardg');?>" class="nav-link">
                                 <i class="nav-icon fas fa-home"></i>
                                 <p>
                                     Dashboard
@@ -86,7 +86,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('datasiswakelas');?>" class="nav-link">
+                            <a href="<?php echo site_url('datasiswakelas');?>" class="nav-link ">
                                 <i class="nav-icon fas fa-user"></i>
                                 <p>
                                     Data Siswa
@@ -155,12 +155,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Data Guru BK</h1>
+                            <h1 class="m-0">Detail Data Guru BK</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Data Guru BK</li>
+                                <li class="breadcrumb-item active">Detail Data Guru BK</li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -170,81 +170,47 @@
 
             <!-- Main content -->
             <div class="content">
-
-                <!-- Tabel Kelas -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header">
-                            <a href="<?php echo site_url('tambahguru'); ?>" class="btn btn-success"><i class="fas fa-user-plus"></i> Data Guru BK</a>
-                                <div class="card-tools">
-                                    <div class="input-group input-group-sm" style="width: 150px;">
-                                        <input type="text" name="table_search" class="form-control float-right"
-                                            placeholder="Search">
-
-                                        <div class="input-group-append">
-                                            <button type="submit" class="btn btn-default">
-                                                <i class="fas fa-search"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.card-header -->
-                            <div class="card-body table-responsive p-0">
-                                <table class="table table-hover text-nowrap">
-                                    <thead>
-                                        <tr>
-                                            <th>Nomor</th>
-                                            <th>Nama</th>
-                                            <th>Jabatan</th>
-                                            <th>NUPTK</th>
-                                            <th>Email</th>
-                                            <th>Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Shiella Dwi Lestari</td>
-                                            <td>Guru BK</td>
-                                            <td>12345</td>
-                                            <td>Shielladwi13@gmail.com</td>
-                                            <td>
-                                                <a href="<?php echo site_url('detailguru'); ?>" class="btn btn-warning btn-sm"><i
-                                                        class="fas fa-edit"></i> Edit</a>
-                                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                                                    data-target="#deleteModal"><i class="fas fa-trash-alt"></i>
-                                                    Hapus</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Emirssyah Putra</td>
-                                            <td>Guru BK</td>
-                                            <td>1234567</td>
-                                            <td>emirssyah13@gmail.com</td>
-                                            <td>
-                                            <a href="<?php echo site_url('detailguru'); ?>" class="btn btn-warning btn-sm"><i
-                                                        class="fas fa-edit"></i> Edit</a>
-                                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                                                    data-target="#deleteModal"><i class="fas fa-trash-alt"></i>
-                                                    Hapus</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
-                            <!-- /.card-body -->
+                <div>
+                    <form class="forms-sample" method="post" action="">
+                        <div class="form-group">
+                            <label for="exampleInputUsername1">Nama</label>
+                            <input type="text" class="form-control" id="exampleInputUsername1" name="nama"
+                                placeholder="Nama" value="" required>
                         </div>
-                        <!-- /.card -->
-                    </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail">Jabatan</label>
+                            <input type="text" class="form-control" name="jabatan" placeholder="Jabatan" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword">NUPTK</label>
+                            <div class="password-container">
+                                <input type="nuptk" class="form-control" name="nuptk" placeholder="NUPTK" value="" required
+                                    style="padding-right: 50px;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputemail">Email</label>
+                            <div class="Email-container">
+                                <input type="email" class="form-control" name="email" placeholder="Email" value=""
+                                    required style="padding-right: 50px;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputpassword">Password</label>
+                            <div class="password-container">
+                                <input type="password" class="form-control" name="password" placeholder="password" value=""
+                                    required style="padding-right: 50px;">
+                            </div>
+                        </div>
+
+                        <a class="btn btn-danger btn-icon-text" href="<?php echo site_url('Dashboard'); ?>">Batal</a>
+                        <button type="submit" class="btn btn-warning btn-icon-text">Simpan</button>
+                    </form>
+
                 </div>
+                <!-- /.container-fluid -->
             </div>
-            <!-- /.content -->
         </div>
-        <!-- /.content-wrapper -->
 
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">

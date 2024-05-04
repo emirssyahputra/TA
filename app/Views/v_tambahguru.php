@@ -86,7 +86,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('datasiswakelas');?>" class="nav-link active">
+                            <a href="<?php echo site_url('datasiswakelas');?>" class="nav-link ">
                                 <i class="nav-icon fas fa-user"></i>
                                 <p>
                                     Data Siswa
@@ -104,7 +104,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('dataguru');?>" class="nav-link">
+                            <a href="<?php echo site_url('dataguru');?>" class="nav-link active">
                                 <i class="nav-icon fas fa-chalkboard-teacher"></i>
                                 <p>
                                     Data Guru BK
@@ -155,12 +155,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Tambah Data Siswa</h1>
+                            <h1 class="m-0">Tambah Data Guru BK</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Data Siswa</li>
+                                <li class="breadcrumb-item active">Data Guru BK</li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -178,27 +178,27 @@
                                 placeholder="Nama" value="" required>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail">Kelas</label>
-                            <input type="kelas" class="form-control" name="kelas" placeholder="Kelas" value="" required>
+                            <label for="exampleInputEmail">Jabatan</label>
+                            <input type="text" class="form-control" name="jabatan" placeholder="Jabatan" value="" required>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword">NISN</label>
+                            <label for="exampleInputPassword">NUPTK</label>
                             <div class="password-container">
-                                <input type="nisn" class="form-control" name="nisn" placeholder="NISN" value="" required
+                                <input type="nuptk" class="form-control" name="nuptk" placeholder="NUPTK" value="" required
                                     style="padding-right: 50px;">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputjenkel">Jenis Kelamin</label>
+                            <label for="exampleInputemail">Email</label>
                             <div class="Email-container">
-                                <input type="text" class="form-control" name="jenkel" placeholder="Jenis Kelamin" value=""
+                                <input type="email" class="form-control" name="email" placeholder="Email" value=""
                                     required style="padding-right: 50px;">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputwali">Wali Kelas</label>
+                            <label for="exampleInputpassword">Password</label>
                             <div class="password-container">
-                                <input type="wali" class="form-control" name="wali" placeholder="Wali Kelas" value=""
+                                <input type="password" class="form-control" name="password" placeholder="password" value=""
                                     required style="padding-right: 50px;">
                             </div>
                         </div>
