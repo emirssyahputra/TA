@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -94,7 +95,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('datalanggarkelas');?>" class="nav-link active">
+                            <a href="<?php echo site_url('datalanggarkelas');?>" class="nav-link">
                                 <i class="nav-icon fas fa-book"></i>
                                 <p>
                                     Data Pelanggaran
@@ -103,7 +104,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('dataguru');?>" class="nav-link">
+                            <a href="<?php echo site_url('dataguru');?>" class="nav-link active">
                                 <i class="nav-icon fas fa-chalkboard-teacher"></i>
                                 <p>
                                     Data Guru BK
@@ -154,12 +155,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Data Pelanggaran Siswa</h1>
+                            <h1 class="m-0">Data Guru BK</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Data Pelanggaran Siswa</li>
+                                <li class="breadcrumb-item active">Data Guru BK</li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -168,68 +169,81 @@
             <!-- /.content-header -->
 
             <!-- Main content -->
-    <div class="content">
- 
-    <!-- Tabel Kelas -->
-    <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Siswa</h3>
+            <div class="content">
 
-                <div class="card-tools">
-                  <div class="input-group input-group-sm" style="width: 150px;">
-                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+                <!-- Tabel Kelas -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                            <a href="<?php echo site_url('tambahguru'); ?>" class="btn btn-success"><i class="fas fa-user-plus"></i> Data Guru BK</a>
+                                <div class="card-tools">
+                                    <div class="input-group input-group-sm" style="width: 150px;">
+                                        <input type="text" name="table_search" class="form-control float-right"
+                                            placeholder="Search">
 
-                    <div class="input-group-append">
-                      <button type="submit" class="btn btn-default">
-                        <i class="fas fa-search"></i>
-                      </button>
+                                        <div class="input-group-append">
+                                            <button type="submit" class="btn btn-default">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body table-responsive p-0">
+                                <table class="table table-hover text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th>Nomor</th>
+                                            <th>Nama</th>
+                                            <th>Jabatan</th>
+                                            <th>NUPTK</th>
+                                            <th>Email</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Shiella Dwi Lestari</td>
+                                            <td>Guru BK</td>
+                                            <td>12345</td>
+                                            <td>Shielladwi13@gmail.com</td>
+                                            <td>
+                                                <a href="<?php echo site_url('datagurudetail'); ?>" class="btn btn-warning btn-sm"><i
+                                                        class="fas fa-edit"></i> Edit</a>
+                                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                    data-target="#deleteModal"><i class="fas fa-trash-alt"></i>
+                                                    Hapus</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Emirssyah Putra</td>
+                                            <td>Guru BK</td>
+                                            <td>1234567</td>
+                                            <td>emirssyah13@gmail.com</td>
+                                            <td>
+                                            <a href="<?php echo site_url('datagurudetail'); ?>" class="btn btn-warning btn-sm"><i
+                                                        class="fas fa-edit"></i> Edit</a>
+                                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                    data-target="#deleteModal"><i class="fas fa-trash-alt"></i>
+                                                    Hapus</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
                     </div>
-                  </div>
                 </div>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body table-responsive p-0">
-                <table class="table table-hover text-nowrap">
-                  <thead>
-                    <tr>
-                      <th>Nomor</th>
-                      <th>Nama</th>
-                      <th>Kelas</th>
-                      <th>NISN</th>
-                      <th>Poin</th>
-                      <th>Aksi</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>Dina</td>
-                      <td>8.1</td>
-                      <td>12345</td>
-                      <td>0</td>
-                      <td><a href="<?php echo site_url('datalanggar');?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Detail</a></td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Dina</td>
-                      <td>8.1</td>
-                      <td>12345</td>
-                      <td>0</td>
-                      <td><a href="<?php echo site_url('datalanggar');?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Detail</a></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
             </div>
-            <!-- /.card -->
-          </div>
+            <!-- /.content -->
         </div>
-    </div>
-    <!-- /.content -->
-  </div>
         <!-- /.content-wrapper -->
 
         <!-- Control Sidebar -->

@@ -75,7 +75,7 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
 
-                        <li class="nav-item">
+               <li class="nav-item">
                             <a href="<?php echo site_url('Dashboardg');?>" class="nav-link ">
                                 <i class="nav-icon fas fa-home"></i>
                                 <p>
@@ -85,7 +85,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('datasiswakelas');?>" class="nav-link ">
+                            <a href="<?php echo site_url('datasiswakelas');?>" class="nav-link">
                                 <i class="nav-icon fas fa-user"></i>
                                 <p>
                                     Data Siswa
@@ -103,7 +103,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('Pengajuan');?>" class="nav-link">
+                            <a href="<?php echo site_url('dataguru');?>" class="nav-link">
                                 <i class="nav-icon fas fa-chalkboard-teacher"></i>
                                 <p>
                                     Data Guru BK
@@ -111,7 +111,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('Pengajuan');?>" class="nav-link" style="font-size: 90%;">
+                            <a href="<?php echo site_url('cetak');?>" class="nav-link" style="font-size: 90%;">
                                 <i class="nav-icon fas fa-print"></i>
                                 <p>
                                     Cetak Riwayat Pelanggaran
@@ -119,7 +119,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('Pengajuan');?>" class="nav-link" style="font-size: 90%;">
+                            <a href="<?php echo site_url('surat');?>" class="nav-link" style="font-size: 90%;">
                                 <i class="nav-icon fas fa-list"></i>
                                 <p>
                                     Daftar Surat Pemanggilan
@@ -127,7 +127,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('Pengajuan');?>" class="nav-link">
+                            <a href="<?php echo site_url('import');?>" class="nav-link">
                                 <i class="nav-icon fas fa-upload"></i>
                                 <p>
                                     Import Data Siswa
@@ -135,7 +135,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('Pengajuan');?>" class="nav-link">
+                            <a href="<?php echo site_url('jadwal');?>" class="nav-link">
                                 <i class="nav-icon fas fa-calendar"></i>
                                 <p>
                                     Jadwal Bimbingan
