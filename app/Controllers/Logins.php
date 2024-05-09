@@ -48,6 +48,7 @@ class Logins extends Controller
                 'id_pengguna' => $cadmin->id_pengguna,
                 'nama' => $cadmin->nama,
                 'email' => $cadmin->email,
+                'kelas' => $cadmin->kelas,
             ];
             $session->set($userdata);
 
@@ -55,17 +56,23 @@ class Logins extends Controller
                 session()->set('akses', '2');
                 $idadmin = $cadmin->id_pengguna;
                 $user_nama = $cadmin->nama;
+                $user_kelas = $cadmin->kelas;
                 session()->set('idadmin', $idadmin);
                 session()->set('namaa', $user_nama);
+                session()->set('kelas', $user_kelas);
                 return redirect()->to(base_url('Dashboard'));
             } else {
                 $error_message = 'Email atau Password Salah. Silakan coba lagi.';
                 session()->setFlashdata('error', $error_message);
                 return redirect()->to('Logins');
             }
-        }
+        }else {
+            $error_message = 'Email atau Password Salah. Silakan coba lagi.';
+            session()->setFlashdata('error', $error_message);
+            return redirect()->to('Logins');
 
     }
+}
 
     public function logout()
     {

@@ -26,12 +26,22 @@ class Dataguru extends BaseController
         }
     }
     public function search(){
-    $keyword = $this->request->getPost('pencarian'); // Ambil keyword pencarian dari form
+    $keyword = $this->request->getPost('search'); // Ambil keyword pencarian dari form
     
         // Logika untuk melakukan pencarian data pengguna berdasarkan keyword dan syarat id_role = 1
         $model = new \App\Models\M_guru();
-        $data['guru'] = $model->where('id_role', 1)->like('nama', $keyword)->findAll();
-    
+        $data['guru'] = $model->where('id_role', 1)
+        ->groupStart()
+            ->like('nama', $keyword)
+            ->orLike('email', $keyword)
+            ->orLike('jabatan', $keyword)
+            ->orLike('nuptk', $keyword)
+        ->groupEnd()
+        ->findAll();
+        $session = \Config\Services::session();
+                $data['nama'] = $session->get('namaa');
+                $data['jabatan']= $session->get('jabatan');
+       
         return view('v_dataguru', $data);
     }
     public function hapus($id)

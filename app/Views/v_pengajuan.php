@@ -55,8 +55,8 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="info">
-                        <a class="d-block">Emirssyah Putra</a>
-                        <a class="d-block">8.8</a>
+                    <a class="d-block"><?php echo $namaa; ?></a>
+                    <a class="d-block"><?php echo $kelas; ?></a>
                     </div>
                 </div>
 

@@ -55,8 +55,8 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="info">
-                        <a class="d-block">Emirssyah Putra</a>
-                        <a class="d-block">8.8</a>
+                         <a class="d-block"><?php echo $nama; ?></a>
+                        <a class="d-block"><?php echo $kelas; ?></a>
                     </div>
                 </div>
 
@@ -132,35 +132,35 @@
             <div class="content">
                 <br>
                 <div>
-                    <form class="forms-sample" method="post" action="">
+                    <form class="forms-sample" method="post" action="<?php echo site_url('sdatasiswa/update'); ?>">
                         <div class="form-group">
                             <label for="exampleInputUsername1">Nama</label>
                             <input type="text" class="form-control" id="exampleInputUsername1" name="nama"
-                                placeholder="Nama" value="" required>
+                                placeholder="Nama" value="<?php echo $nama; ?>" readonly required>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail">Kelas</label>
-                            <input type="kelas" class="form-control" name="kelas" placeholder="Kelas" value="" required>
+                            <input type="kelas" class="form-control" name="kelas" placeholder="Kelas" value="<?php echo $kelas; ?>" readonly required>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword">NISN</label>
                             <div class="password-container">
-                                <input type="nisn" class="form-control" name="nisn" placeholder="NISN" value="" required
+                                <input type="nisn" class="form-control" name="nisn" placeholder="NISN" value="<?php echo $nisn; ?>" readonly required
                                     style="padding-right: 50px;">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail">Email</label>
                             <div class="Email-container">
-                                <input type="email" class="form-control" name="email" placeholder="Email" value=""
+                                <input type="email" class="form-control" name="email" placeholder="Email" value="<?php echo $email; ?>" readonly
                                     required style="padding-right: 50px;">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword">Password</label>
                             <div class="password-container">
-                                <input type="nisn" class="form-control" name="password" placeholder="Password" value=""
-                                    required style="padding-right: 50px;">
+                                <input type="password" class="form-control" name="password" placeholder="Password" value=""
+                                     style="padding-right: 50px;">
                             </div>
                         </div>
 

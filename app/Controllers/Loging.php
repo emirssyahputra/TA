@@ -66,9 +66,13 @@ class Loging extends Controller
             session()->setFlashdata('error', $error_message);
             return redirect()->to('loging');
             }
-        }
+        }else {
+            $error_message = 'Email atau Password Salah. Silakan coba lagi.';
+        session()->setFlashdata('error', $error_message);
+        return redirect()->to('loging');
 
     }
+}
 
     public function logout()
     {

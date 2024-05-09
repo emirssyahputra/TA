@@ -28,14 +28,6 @@
 
       <form action="<?= site_url('register/process'); ?>" method="post">
         <div class="input-group mb-3">
-          <input type="text" name="nama" class="form-control" placeholder="Nama Lengkap">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-user"></span>
-            </div>
-          </div>
-        </div>
-        <div class="input-group mb-3">
           <input type="text" name="nisn" class="form-control" placeholder="NISN">
           <div class="input-group-append">
             <div class="input-group-text">
@@ -73,7 +65,7 @@
 
       
 
-      <a href="<?php echo site_url('registerotp'); ?>" class="text-center">Saya sudah punya akun</a>
+      <a href="<?php echo site_url('logins'); ?>" class="text-center">Saya sudah punya akun</a>
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->

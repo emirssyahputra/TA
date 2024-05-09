@@ -11,7 +11,10 @@ class Jadwals extends BaseController
 
         if ($sesi_pengguna_id) {
             if ($akses_pengguna == 2) {
-                return view('v_jadwals');
+                $session = \Config\Services::session();
+                $iden['namaa'] = $session->get('namaa');
+                $iden['kelas'] = $session->get('kelas');
+                return view('v_jadwals', $iden);
             } else {
                 session()->destroy();
                 return redirect()->to(site_url('logins'));

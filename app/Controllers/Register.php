@@ -42,7 +42,6 @@ class Register extends BaseController
             'email' => $this->request->getVar('email'),
             'nisn'  => $this->request->getVar('nisn'),
             'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
-            'nama' => $this->request->getVar('nama'),
             'id_role' => 2,
 
         ];
@@ -112,8 +111,6 @@ class Register extends BaseController
 
 
 }
-
-
     private function generateOTP()
     {
         

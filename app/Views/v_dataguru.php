@@ -61,6 +61,11 @@
         }
     });
 </script>
+<script>
+    function confirmDelete() {
+        return confirm("Apakah Anda yakin ingin menghapus data guru BK ini?");
+    }
+</script>
 
 
 
@@ -90,7 +95,7 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="#" class="brand-link">
-                <img src="img/logosmp.png" alt="AdminLTE Logo" class="brand-image elevation-3" style="opacity: .8">
+                <img src="<?php echo base_url('img/logosmp.png'); ?>" alt="AdminLTE Logo" class="brand-image elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light" style="font-size: 80%;">SMPN 10 Bandar Lampung</span>
             </a>
 
@@ -214,16 +219,17 @@
                                 <a href="<?php echo site_url('tambahguru'); ?>" class="btn btn-success"><i
                                         class="fas fa-user-plus"></i> Data Guru BK</a>
                                 <div class="card-tools">
-                                    <div class="input-group input-group-sm" style="width: 150px;">
-                                        <input type="text" name="table_search" class="form-control float-right"
-                                            placeholder="Search">
-
-                                        <div class="input-group-append">
-                                            <button type="submit" class="btn btn-default">
-                                                <i class="fas fa-search"></i>
-                                            </button>
+                                    <form action="<?= site_url('Dataguru/search'); ?>" method="post">
+                                        <div class="input-group input-group-sm" style="width: 150px;">
+                                            <input type="text" name="search" class="form-control float-right"
+                                                placeholder="Search">
+                                            <div class="input-group-append">
+                                                <button type="submit" class="btn btn-default">
+                                                    <i class="fas fa-search"></i>
+                                                </button>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                             <!-- /.card-header -->
@@ -254,10 +260,10 @@
                                                 <td><?= $nuptk; ?></td>
                                                 <td><?= $email; ?></td>
                                                 <td>
-                                                    <a href="<?php echo site_url('Detailguru/' .$id); ?>"
+                                                    <a href="<?php echo site_url('Detailguru/' . $id); ?>"
                                                         class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Ubah</a>
                                                     <a href="<?php echo site_url('dataguru/hapus/' . $id); ?>"
-                                                        data-id="<?= $id ?>" class="btn btn-danger btn-sm"><i
+                                                        data-id="<?= $id ?>" onclick="return confirmDelete();" class="btn btn-danger btn-sm"><i
                                                             class="fas fa-trash"></i> Hapus</a>
                                                 </td>
                                             </tr>
