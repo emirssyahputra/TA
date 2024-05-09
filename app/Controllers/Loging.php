@@ -48,6 +48,7 @@ class Loging extends Controller
                 'id_pengguna' => $cadmin->id_pengguna,
                 'nama' => $cadmin->nama,
                 'email' => $cadmin->email,
+                'jabatan'=> $cadmin->jabatan,
             ];
             $session->set($userdata);
 
@@ -55,8 +56,10 @@ class Loging extends Controller
                 session()->set('akses', '1');
                 $idadmin = $cadmin->id_pengguna;
                 $user_nama = $cadmin->nama;
+                $user_jabatan= $cadmin->jabatan;
                 session()->set('idadmin', $idadmin);
                 session()->set('namaa', $user_nama);
+                session()->set('jabatan', $user_jabatan);
                 return redirect()->to(base_url('Dashboardg'));
             } else {
                 $error_message = 'Email atau Password Salah. Silakan coba lagi.';

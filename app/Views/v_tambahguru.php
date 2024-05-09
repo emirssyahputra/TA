@@ -64,8 +64,8 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="info">
-                        <a class="d-block">Emirssyah Putra</a>
-                        <a class="d-block">Guru BK</a>
+                        <a class="d-block"><?php echo $nama; ?></a>
+                        <a class="d-block"><?php echo $jabatan; ?></a>
                     </div>
                 </div>
 
@@ -171,7 +171,7 @@
             <!-- Main content -->
             <div class="content">
                 <div>
-                    <form class="forms-sample" method="post" action="">
+                    <form class="forms-sample" method="post" action="<?php echo site_url('tambahguru/tambah'); ?>">
                         <div class="form-group">
                             <label for="exampleInputUsername1">Nama</label>
                             <input type="text" class="form-control" id="exampleInputUsername1" name="nama"

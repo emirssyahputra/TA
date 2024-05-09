@@ -32,18 +32,10 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->add('login/cek', 'Login::cek');
-$routes->add('Apply/(:num)', 'Apply::index/$1');
-$routes->add('UbahPengguna/(:num)', 'UbahPengguna::index/$1');
-$routes->add('UbahOutlet/(:num)', 'UbahOutlet::index/$1');
-$routes->get('UbahJob/(:segment)', 'UbahJob::index/$1');
-$routes->get('DetailPendaftar/(:segment)', 'DetailPendaftar::index/$1');
-$routes->get('UbahStatusPendaftar/(:segment)', 'UbahStatusPendaftar::index/$1');
-$routes->get('file/(:segment)', 'DetailPendaftar::downloadFile/$1');
-$routes->get('pCareer', 'pCareer::index');
-$routes->get('pHome', 'pHome::index');
-$routes->get('pAbout', 'pAbout::index');
-$routes->get('TambahOutlet', 'TambahOutlet::index');
+$routes->add('logins/cek', 'Logins::cek');
+$routes->add('loging/cek', 'Loging::cek');
+$routes->add('Detailguru/(:num)', 'Detailguru::index/$1');
+
 
 
 

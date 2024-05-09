@@ -55,7 +55,7 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="#" class="brand-link">
-                <img src="img/logosmp.png" alt="AdminLTE Logo" class="brand-image elevation-3" style="opacity: .8">
+            <img src="<?php echo base_url('img/logosmp.png'); ?>" class="brand-image elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light" style="font-size: 80%;">SMPN 10 Bandar Lampung</span>
             </a>
 
@@ -64,8 +64,8 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="info">
-                        <a class="d-block">Emirssyah Putra</a>
-                        <a class="d-block">Guru BK</a>
+                    <a class="d-block"><?php echo $namaa; ?></a>
+                        <a class="d-block"><?php echo $jabatann; ?></a>
                     </div>
                 </div>
 
@@ -171,27 +171,27 @@
             <!-- Main content -->
             <div class="content">
                 <div>
-                    <form class="forms-sample" method="post" action="">
+                    <form class="forms-sample" method="post" action="<?php echo site_url('Detailguru/update/' . $id); ?>">
                         <div class="form-group">
                             <label for="exampleInputUsername1">Nama</label>
                             <input type="text" class="form-control" id="exampleInputUsername1" name="nama"
-                                placeholder="Nama" value="" required>
+                                placeholder="Nama" value="<?= $guru['nama']; ?>" required>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail">Jabatan</label>
-                            <input type="text" class="form-control" name="jabatan" placeholder="Jabatan" value="" required>
+                            <input type="text" class="form-control" name="jabatan" placeholder="Jabatan" value="<?= $guru['jabatan']; ?>" required>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword">NUPTK</label>
                             <div class="password-container">
-                                <input type="nuptk" class="form-control" name="nuptk" placeholder="NUPTK" value="" required
+                                <input type="nuptk" class="form-control" name="nuptk" placeholder="NUPTK" value="<?= $guru['nuptk']; ?>" required
                                     style="padding-right: 50px;">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputemail">Email</label>
                             <div class="Email-container">
-                                <input type="email" class="form-control" name="email" placeholder="Email" value=""
+                                <input type="email" class="form-control" name="email" placeholder="Email" value="<?= $guru['email']; ?>"
                                     required style="padding-right: 50px;">
                             </div>
                         </div>

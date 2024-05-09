@@ -63,8 +63,8 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="info">
-                        <a class="d-block">Emirssyah Putra</a>
-                        <a class="d-block">Guru BK</a>
+                        <a class="d-block"><?php echo $nama; ?></a>
+                        <a class="d-block"><?php echo $jabatan; ?></a>
                     </div>
                 </div>
 
@@ -191,14 +191,14 @@
                     <!-- small card -->
                     <div class="small-box bg-success">
                         <div class="inner">
-                            <h3>6</h3>
+                            <h3><?php echo $admin; ?></h3>
                             
                             <p>Data Guru BK</p>
                         </div>
                         <div class="icon">
                         <i class="fas fa-chalkboard-teacher"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
+                        <a href="<?php echo site_url('dataguru');?>" class="small-box-footer">
                             More info <i class="fas fa-arrow-circle-right"></i>
                         </a>
                     </div>

@@ -11,7 +11,12 @@ class Dashboardg extends BaseController
 
         if ($sesi_pengguna_id) {
             if ($akses_pengguna == 1) {
-                return view('v_dashboardg');
+                $session = \Config\Services::session();
+                $data['nama'] = $session->get('namaa');
+                $data['jabatan']= $session->get('jabatan');
+                $m_guru = new \App\Models\M_guru();
+                $data['admin'] = $m_guru->where('id_role', 1)->countAllResults();
+                return view('v_dashboardg', $data);
             } else {
                 session()->destroy();
                 return redirect()->to(site_url('logins'));
