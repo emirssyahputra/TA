@@ -12,4 +12,8 @@ class M_guru extends Model
     {
         return $this->delete($id);
     }
+    public function getall()
+    {
+        return $this->findAll(); // Mengambil semua data guru dari tabel
+    }
 }

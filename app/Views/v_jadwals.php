@@ -16,7 +16,38 @@
   <link rel="stylesheet" href="<?= base_url('plugins/icheck-bootstrap/icheck-bootstrap.min.css'); ?>">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?= base_url('css/style.css'); ?>">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
+
+<script>
+    $(document).ready(function () {
+        <?php if (session()->getFlashdata('error')): ?>
+            showNotification('<?php echo session()->getFlashdata('error'); ?>', 'error');
+        <?php endif; ?>
+        <?php if (session()->getFlashdata('success')): ?>
+            showNotification('<?php echo session()->getFlashdata('success'); ?>', 'success');
+        <?php endif; ?>
+
+        function showNotification(message, type) {
+            toastr.options = {
+                "closeButton": true,
+                "progressBar": true,
+                "positionClass": "toast-top-center",
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            };
+            toastr[type](message);
+        }
+    });
+</script>
 <!--
 `body` tag options:
 
@@ -149,14 +180,15 @@
             </tr>
           </thead>
           <tbody>
-            <!-- Isi tabel di sini -->
-            <tr>
-              <th scope="row">1</th>
-              <td>Dina</td>
-              <td>01/01/2024</td>
-              <td>Diproses</td>
-            </tr>
-            <!-- Tambahkan baris tambahan sesuai dengan data pelanggaran -->
+          <?php $i = 1; ?>
+            <?php foreach ($jadwal as $item) : ?>
+                <tr>
+                    <td><?= $i++; ?></td>
+                    <td><?= $item['guru']; ?></td>
+                    <td><?= $item['waktu']; ?></td>
+                    <td><?= $item['status']; ?></td>
+                </tr>
+            <?php endforeach; ?>
           </tbody>
         </table>
       </div>

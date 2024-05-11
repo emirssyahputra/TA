@@ -18,16 +18,38 @@
     <link rel="stylesheet" href="<?= base_url('plugins/icheck-bootstrap/icheck-bootstrap.min.css'); ?>">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url('css/style.css'); ?>">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
-<!--
-`body` tag options:
 
-  Apply one or more of the following classes to to the body tag
-  to get the desired effect
+<script>
+    $(document).ready(function () {
+        <?php if (session()->getFlashdata('error')): ?>
+            showNotification('<?php echo session()->getFlashdata('error'); ?>', 'error');
+        <?php endif; ?>
+        <?php if (session()->getFlashdata('success')): ?>
+            showNotification('<?php echo session()->getFlashdata('success'); ?>', 'success');
+        <?php endif; ?>
 
-  * sidebar-collapse
-  * sidebar-mini
--->
+        function showNotification(message, type) {
+            toastr.options = {
+                "closeButton": true,
+                "progressBar": true,
+                "positionClass": "toast-bottom-right",
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            };
+            toastr[type](message);
+        }
+    });
+</script>
 
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
@@ -64,8 +86,8 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="info">
-                        <a class="d-block">Emirssyah Putra</a>
-                        <a class="d-block">Guru BK</a>
+                        <a class="d-block"><?php echo $nama; ?></a>
+                        <a class="d-block"><?php echo $jabatan; ?></a>
                     </div>
                 </div>
 
@@ -77,7 +99,7 @@
                with font-awesome or any other icon font library -->
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('Dashboardg');?>" class="nav-link ">
+                            <a href="<?php echo site_url('Dashboardg'); ?>" class="nav-link ">
                                 <i class="nav-icon fas fa-home"></i>
                                 <p>
                                     Dashboard
@@ -86,7 +108,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('datasiswakelas');?>" class="nav-link">
+                            <a href="<?php echo site_url('datasiswakelas'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-user"></i>
                                 <p>
                                     Data Siswa
@@ -95,7 +117,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('datalanggarkelas');?>" class="nav-link">
+                            <a href="<?php echo site_url('datalanggarkelas'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-book"></i>
                                 <p>
                                     Data Pelanggaran
@@ -104,7 +126,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('dataguru');?>" class="nav-link ">
+                            <a href="<?php echo site_url('dataguru'); ?>" class="nav-link ">
                                 <i class="nav-icon fas fa-chalkboard-teacher"></i>
                                 <p>
                                     Data Guru BK
@@ -112,7 +134,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('cetak');?>" class="nav-link" style="font-size: 90%;">
+                            <a href="<?php echo site_url('cetak'); ?>" class="nav-link" style="font-size: 90%;">
                                 <i class="nav-icon fas fa-print"></i>
                                 <p>
                                     Cetak Riwayat Pelanggaran
@@ -120,7 +142,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('surat');?>" class="nav-link" style="font-size: 90%;">
+                            <a href="<?php echo site_url('surat'); ?>" class="nav-link" style="font-size: 90%;">
                                 <i class="nav-icon fas fa-list"></i>
                                 <p>
                                     Daftar Surat Pemanggilan
@@ -128,7 +150,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('import');?>" class="nav-link">
+                            <a href="<?php echo site_url('import'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-upload"></i>
                                 <p>
                                     Import Data Siswa
@@ -136,7 +158,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('jadwal');?>" class="nav-link active">
+                            <a href="<?php echo site_url('jadwal'); ?>" class="nav-link active">
                                 <i class="nav-icon fas fa-calendar"></i>
                                 <p>
                                     Jadwal Bimbingan
@@ -185,25 +207,30 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- Isi tabel di sini -->
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Dina</td>
-                                    <td>01/01/2024</td>
-                                    <td>Diproses</td>
-                                    <td>
-                                        <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
-                                            data-target="#deleteModal"><i class="fas fa-check"></i>
-                                            Terima</button>
-                                        <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                                            data-target="#deleteModal"><i class="fas fa-times"></i>
-                                            Tolak</button>
-                                            <button type="button" class="btn btn-warning btn-sm" data-toggle="modal"
-                                            data-target="#deleteModal"><i class="fas fa-trash"></i>
-                                            Hapus</button>
-                                    </td>
-                                </tr>
-                                <!-- Tambahkan baris tambahan sesuai dengan data pelanggaran -->
+                                <?php $i = 1; ?>
+                                <?php foreach ($jadwal as $item): ?>
+                                    <tr>
+                                        <td><?= $i++; ?></td>
+                                        <td><?= $item['nama']; ?></td>
+                                        <td><?= $item['waktu']; ?></td>
+                                        <td><?= $item['status']; ?></td>
+                                        <td>
+                                            <button type="button" class="btn btn-success btn-sm"
+                                                onclick="accJadwal(<?= $item['id_jadwal']; ?>)">
+                                                <i class="fas fa-check"></i> Terima
+                                            </button>
+                                            <button type="button" class="btn btn-danger btn-sm"
+                                                onclick="decJadwal(<?= $item['id_jadwal']; ?>)">
+                                                <i class="fas fa-times"></i> Tolak
+                                            </button>
+                                            <button type="button" class="btn btn-warning btn-sm"
+                                                onclick="delJadwal(<?= $item['id_jadwal']; ?>)">
+                                                <i class="fas fa-trash"></i> Hapus
+                                            </button>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+
                             </tbody>
                         </table>
                     </div>
@@ -233,20 +260,35 @@
     <!-- REQUIRED SCRIPTS -->
 
     <!-- jQuery -->
-    <script src="<?php echo base_url().'plugins/jquery/jquery.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'plugins/jquery/jquery.min.js' ?>"></script>
     <!-- Bootstrap 4 -->
-    <script src="<?php echo base_url().'plugins/bootstrap/js/bootstrap.bundle.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'plugins/bootstrap/js/bootstrap.bundle.min.js' ?>"></script>
 
     <!-- AdminLTE App -->
-    <script src="<?php echo base_url().'js/adminlte.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'js/adminlte.min.js' ?>"></script>
 
 
     <!-- OPTIONAL SCRIPTS -->
-    <script src="<?php echo base_url().'plugins/chart.js/Chart.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'plugins/chart.js/Chart.min.js' ?>"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="<?php echo base_url().'dist/js/demo.js'?>"></script>
+    <script src="<?php echo base_url() . 'dist/js/demo.js' ?>"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="<?php echo base_url().'dist/js/pages/dashboard3.js'?>"></script>
+    <script src="<?php echo base_url() . 'dist/js/pages/dashboard3.js' ?>"></script>
+
+    <script>
+    function accJadwal(id) {
+        window.location.href = "<?php echo base_url('jadwal/acc/'); ?>" + id;
+    }
+
+    function decJadwal(id) {
+        window.location.href = "<?php echo base_url('jadwal/dec/'); ?>" + id;
+    }
+
+    function delJadwal(id) {
+        window.location.href = "<?php echo base_url('jadwal/del/'); ?>" + id;
+    }
+</script>
+
 </body>
 
 </html>

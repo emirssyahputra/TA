@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\M_jadwal;
 use App\Models\M_login;
 
 class sdatasiswa extends BaseController
@@ -12,7 +13,7 @@ class sdatasiswa extends BaseController
         $akses_pengguna = session()->get('akses');
         $siswa = null;
         $iden = []; // Initialize $iden array
-    
+
         if ($sesi_pengguna_id) {
             if ($akses_pengguna == 2) {
                 $session = \Config\Services::session();
@@ -20,6 +21,7 @@ class sdatasiswa extends BaseController
                 $iden['kelas'] = $session->get('kelas');
                 $model = new M_login();
                 $siswa = $model->find($sesi_pengguna_id);
+
             } else {
                 session()->destroy();
                 return redirect()->to(site_url('logins'));
@@ -27,10 +29,10 @@ class sdatasiswa extends BaseController
         } else {
             return redirect()->to(site_url('logins'));
         }
-    
+
         return view('v_sdatasiswa', $siswa + $iden);
     }
-    
+
     public function update()
     {
         $sesi_pengguna_id = session()->get('idadmin');

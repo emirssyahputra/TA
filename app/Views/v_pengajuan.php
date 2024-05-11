@@ -55,8 +55,8 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="info">
-                    <a class="d-block"><?php echo $namaa; ?></a>
-                    <a class="d-block"><?php echo $kelas; ?></a>
+                        <a class="d-block"><?php echo $namaa; ?></a>
+                        <a class="d-block"><?php echo $kelas; ?></a>
                     </div>
                 </div>
 
@@ -68,7 +68,7 @@
                with font-awesome or any other icon font library -->
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('Dashboard');?>" class="nav-link ">
+                            <a href="<?php echo site_url('Dashboard'); ?>" class="nav-link ">
                                 <i class="nav-icon fas fa-list"></i>
                                 <p>
                                     Riwayat Pelanggaran
@@ -77,7 +77,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('sdatasiswa');?>" class="nav-link">
+                            <a href="<?php echo site_url('sdatasiswa'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-user"></i>
                                 <p>
                                     Data Akun Siswa
@@ -86,7 +86,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('Jadwals');?>" class="nav-link">
+                            <a href="<?php echo site_url('Jadwals'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-calendar-alt"></i>
                                 <p>
                                     Jadwal Bimbingan
@@ -95,7 +95,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('Pengajuan');?>" class="nav-link active">
+                            <a href="<?php echo site_url('Pengajuan'); ?>" class="nav-link active">
                                 <i class="nav-icon fas fa-edit"></i>
                                 <p>
                                     Pengajuan Jadwal
@@ -132,22 +132,28 @@
             <div class="content">
                 <br>
                 <div>
-                    <form class="forms-sample" method="post" action="">
+                    <form class="forms-sample" method="post" action="<?php echo site_url('pengajuan/save'); ?>">
                         <div class="form-group">
                             <label for="exampleInputUsername1">Tanggal</label>
-                            <input type="date" class="form-control" id="exampleInputUsername1" name="nama"
-                                placeholder="Nama" value="" required>
+                            <input type="datetime-local" class="form-control" id="exampleInputUsername1" name="tanggal"
+                                placeholder="Tanggal" value="" required>
                         </div>
                         <div class="form-group">
                             <label for="gurubk">Guru BK</label>
                             <select class="form-control" id="gurubk" name="gurubk" required>
-                                <option value="">Pilih Guru BK</option>
-                                <option value="Nama Guru BK 1">Nama Guru BK 1</option>
-                                <option value="Nama Guru BK 2">Nama Guru BK 2</option>
-                                <option value="Nama Guru BK 3">Nama Guru BK 3</option>
-                                <!-- Tambahkan opsi guru BK lainnya sesuai kebutuhan -->
+                                <?php foreach ($daftar_guru as $guru): ?>
+                                    <option value="<?= $guru['nama']; ?>"><?= $guru['nama']; ?></option>
+                                <?php endforeach; ?>
                             </select>
                         </div>
+
+                        <!-- Input Nama -->
+                        <input type="hidden" name="nama" value="<?= session()->get('namaa'); ?>">
+                        <input type="hidden" name="kelas" value="<?= session()->get('kelas'); ?>">
+
+
+                        <!-- Input NISN -->
+                        <input type="hidden" name="nisn" value="<?php echo $nisn; ?>">
 
 
                         <a class="btn btn-danger btn-icon-text" href="<?php echo site_url('Dashboard'); ?>">Batal</a>
