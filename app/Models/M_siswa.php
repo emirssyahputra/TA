@@ -39,4 +39,18 @@ class M_siswa extends Model
     {
         return $this->delete($id_riwayat);
     }
+    public function getTotalPoinByNISN($nisn)
+    {
+        // Ambil data siswa berdasarkan NISN
+        $siswa = $this->where('nisn', $nisn)->first();
+
+        // Jika siswa dengan NISN yang diberikan ditemukan
+        if ($siswa) {
+            // Kembalikan total poin siswa
+            return $siswa['poin'];
+        }
+
+        // Jika siswa tidak ditemukan, kembalikan 0 atau nilai default yang sesuai
+        return 0;
+    }
 }

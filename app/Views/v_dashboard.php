@@ -19,36 +19,36 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="<?= base_url('css/style.css'); ?>">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 
 <script>
-    $(document).ready(function () {
-        <?php if (session()->getFlashdata('error')): ?>
-            showNotification('<?php echo session()->getFlashdata('error'); ?>', 'error');
-        <?php endif; ?>
-        <?php if (session()->getFlashdata('success')): ?>
-            showNotification('<?php echo session()->getFlashdata('success'); ?>', 'success');
-        <?php endif; ?>
+  $(document).ready(function () {
+    <?php if (session()->getFlashdata('error')): ?>
+      showNotification('<?php echo session()->getFlashdata('error'); ?>', 'error');
+    <?php endif; ?>
+    <?php if (session()->getFlashdata('success')): ?>
+      showNotification('<?php echo session()->getFlashdata('success'); ?>', 'success');
+    <?php endif; ?>
 
-        function showNotification(message, type) {
-            toastr.options = {
-                "closeButton": true,
-                "progressBar": true,
-                "positionClass": "toast-top-center",
-                "showDuration": "300",
-                "hideDuration": "1000",
-                "timeOut": "5000",
-                "extendedTimeOut": "1000",
-                "showEasing": "swing",
-                "hideEasing": "linear",
-                "showMethod": "fadeIn",
-                "hideMethod": "fadeOut"
-            };
-            toastr[type](message);
-        }
-    });
+    function showNotification(message, type) {
+      toastr.options = {
+        "closeButton": true,
+        "progressBar": true,
+        "positionClass": "toast-top-center",
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+      };
+      toastr[type](message);
+    }
+  });
 </script>
 
 <body class="hold-transition sidebar-mini">
@@ -165,7 +165,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="poin-box">
-              <p>Total Poin : 100</p>
+              <p>Total Poin :  <?= $totalPoin; ?></p>
             </div>
           </div>
         </div>
@@ -183,13 +183,15 @@
                 </tr>
               </thead>
               <tbody>
-                <!-- Isi tabel di sini -->
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Pelanggaran 1</td>
-                  <td>01/01/2024</td>
-                  <td>10</td>
-                </tr>
+                <?php $i = 1;
+                foreach ($riwayatPelanggaran as $pelanggaran): ?>
+                  <tr>
+                    <td><?= $i++; ?></td>
+                    <td><?= $pelanggaran['pelanggaran']; ?></td>
+                    <td><?= $pelanggaran['tanggal']; ?></td>
+                    <td><?= $pelanggaran['poin']; ?></td>
+                  </tr>
+                <?php endforeach; ?>
                 <!-- Tambahkan baris tambahan sesuai dengan data pelanggaran -->
               </tbody>
             </table>

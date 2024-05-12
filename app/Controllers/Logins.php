@@ -49,6 +49,7 @@ class Logins extends Controller
                 'nama' => $cadmin->nama,
                 'email' => $cadmin->email,
                 'kelas' => $cadmin->kelas,
+                'nisn' => $cadmin->nisn,
             ];
             $session->set($userdata);
 
@@ -57,9 +58,11 @@ class Logins extends Controller
                 $idadmin = $cadmin->id_pengguna;
                 $user_nama = $cadmin->nama;
                 $user_kelas = $cadmin->kelas;
+                $user_nisn = $cadmin->nisn;
                 session()->set('idadmin', $idadmin);
                 session()->set('namaa', $user_nama);
                 session()->set('kelas', $user_kelas);
+                session()->set('nisn', $user_nisn);
                 return redirect()->to(base_url('Dashboard'));
             } else {
                 $error_message = 'Email atau Password Salah. Silakan coba lagi.';

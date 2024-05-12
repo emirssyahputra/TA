@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\M_jadwal;
+use App\Models\M_riwayat;
 use App\Models\M_siswa;
 
 class Dashboardg extends BaseController
@@ -27,6 +28,9 @@ class Dashboardg extends BaseController
                 $siswaModel = new M_siswa();
                 $jumlahSiswa = $siswaModel->countAll();
                 $data['siswa'] = $jumlahSiswa;
+                $riwayatmodel = new M_riwayat();
+                $jumlahriwayat = $riwayatmodel->countAll();
+                $data['riwayat'] = $jumlahriwayat;
                 return view('v_dashboardg', $data);
             } else {
                 session()->destroy();
