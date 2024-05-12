@@ -174,14 +174,14 @@
                     <!-- small card -->
                     <div class="small-box bg-info">
                         <div class="inner">
-                            <h3>1100</h3>
+                            <h3><?php echo $siswa; ?></h3>
 
                             <p>Data Siswa</p>
                         </div>
                         <div class="icon">
                         <i class="fas fa-user"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
+                        <a href="<?php echo site_url('datasiswakelas');?>" class="small-box-footer">
                             More info <i class="fas fa-arrow-circle-right"></i>
                         </a>
                     </div>
@@ -225,14 +225,14 @@
                     <!-- small card -->
                     <div class="small-box bg-danger">
                         <div class="inner">
-                            <h3>5</h3>
+                            <h3><?php echo $jadwal; ?></h3>
 
                             <p>Jadwal Bimbingan</p>
                         </div>
                         <div class="icon">
                             <i class="fas fa-calendar"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
+                        <a href="<?php echo site_url('jadwal');?>" class="small-box-footer">
                             More info <i class="fas fa-arrow-circle-right"></i>
                         </a>
                     </div>

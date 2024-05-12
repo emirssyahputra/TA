@@ -55,7 +55,7 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="#" class="brand-link">
-                <img src="img/logosmp.png" alt="AdminLTE Logo" class="brand-image elevation-3" style="opacity: .8">
+            <img src="<?php echo base_url('img/logosmp.png'); ?>" alt="AdminLTE Logo" class="brand-image elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light" style="font-size: 80%;">SMPN 10 Bandar Lampung</span>
             </a>
 
@@ -64,8 +64,8 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="info">
-                        <a class="d-block">Emirssyah Putra</a>
-                        <a class="d-block">Guru BK</a>
+                        <a class="d-block"><?php echo $nama; ?></a>
+                        <a class="d-block"><?php echo $jabatan; ?></a>
                     </div>
                 </div>
 
@@ -171,7 +171,11 @@
             <!-- Main content -->
             <div class="content">
                 <div>
-                    <form class="forms-sample" method="post" action="">
+                    <form class="forms-sample" method="post" action="<?php echo site_url('tambahlanggar/tambah'); ?>">
+                    <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputUsername1" name="nisn" 
+                                placeholder="Pelanggaran" value="<?= $nisn; ?>"  hidden required>
+                        </div>
                         <div class="form-group">
                             <label for="exampleInputUsername1">Pelanggaran</label>
                             <input type="text" class="form-control" id="exampleInputUsername1" name="pelanggaran"
@@ -188,7 +192,7 @@
                                     style="padding-right: 50px;">
                             </div>
                         </div>
-                        <a class="btn btn-danger btn-icon-text" href="<?php echo site_url('Dashboard'); ?>">Batal</a>
+                        <a class="btn btn-danger btn-icon-text" href="javascript:history.go(-1);">Batal</a>
                         <button type="submit" class="btn btn-warning btn-icon-text">Simpan</button>
                     </form>
 

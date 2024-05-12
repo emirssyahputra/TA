@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\M_jadwal;
+use App\Models\M_siswa;
 
 class Dashboardg extends BaseController
 {
@@ -16,6 +18,15 @@ class Dashboardg extends BaseController
                 $data['jabatan']= $session->get('jabatan');
                 $m_guru = new \App\Models\M_guru();
                 $data['admin'] = $m_guru->where('id_role', 1)->countAllResults();
+                $nama = session()->get('nama');
+                $jadwalmodel = new M_jadwal();
+
+                // Hitung jadwal bimbingan berdasarkan nama dari session
+                $jumlahJadwal = $jadwalmodel->where('guru', $nama)->countAllResults();
+                $data['jadwal'] = $jumlahJadwal;
+                $siswaModel = new M_siswa();
+                $jumlahSiswa = $siswaModel->countAll();
+                $data['siswa'] = $jumlahSiswa;
                 return view('v_dashboardg', $data);
             } else {
                 session()->destroy();

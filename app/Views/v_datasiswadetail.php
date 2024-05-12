@@ -55,7 +55,7 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="#" class="brand-link">
-                <img src="img/logosmp.png" alt="AdminLTE Logo" class="brand-image elevation-3" style="opacity: .8">
+                <img src="<?php echo base_url('img/logosmp.png'); ?>" alt="AdminLTE Logo" class="brand-image elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light" style="font-size: 80%;">SMPN 10 Bandar Lampung</span>
             </a>
 
@@ -64,8 +64,8 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="info">
-                        <a class="d-block">Emirssyah Putra</a>
-                        <a class="d-block">Guru BK</a>
+                          <a class="d-block"><?php echo $nama; ?></a>
+                        <a class="d-block"><?php echo $jabatan; ?></a>
                     </div>
                 </div>
 
@@ -171,39 +171,46 @@
             <!-- Main content -->
             <div class="content">
                 <div>
-                    <form class="forms-sample" method="post" action="">
+                    <form class="forms-sample" method="post" action="<?php echo site_url('datasiswadetail/update/' .$id_siswa); ?>">
                         <div class="form-group">
                             <label for="exampleInputUsername1">Nama</label>
                             <input type="text" class="form-control" id="exampleInputUsername1" name="nama"
-                                placeholder="Nama" value="" required>
+                                placeholder="Nama" value="<?= $siswa['nama']; ?>" required>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail">Kelas</label>
-                            <input type="kelas" class="form-control" name="kelas" placeholder="Kelas" value="" required>
+                            <input type="kelas" class="form-control" name="kelas" placeholder="Kelas" value="<?= $siswa['kelas']; ?>"" required>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword">NISN</label>
                             <div class="password-container">
-                                <input type="nisn" class="form-control" name="nisn" placeholder="NISN" value="" required
+                                <input type="nisn" class="form-control" name="nisn" placeholder="NISN" value="<?= $siswa['nisn']; ?>"" required
                                     style="padding-right: 50px;">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputjenkel">Jenis Kelamin</label>
                             <div class="Email-container">
-                                <input type="text" class="form-control" name="jenkel" placeholder="Jenis Kelamin" value=""
+                                <input type="text" class="form-control" name="jenkel" placeholder="Jenis Kelamin" value="<?= $siswa['jenkel']; ?>""
+                                    required style="padding-right: 50px;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputwali">Nomor Telepon Orang Tua</label>
+                            <div class="password-container">
+                                <input type="wali" class="form-control" name="ortu" placeholder="ortu" value="<?= $siswa['no_ortu']; ?>"" 
                                     required style="padding-right: 50px;">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputwali">Wali Kelas</label>
                             <div class="password-container">
-                                <input type="wali" class="form-control" name="wali" placeholder="Wali Kelas" value=""
+                                <input type="wali" class="form-control" name="wali" placeholder="Wali Kelas" value="<?= $siswa['wali']; ?>""
                                     required style="padding-right: 50px;">
                             </div>
                         </div>
 
-                        <a class="btn btn-danger btn-icon-text" href="<?php echo site_url('Dashboard'); ?>">Batal</a>
+                        <a class="btn btn-danger btn-icon-text" href="javascript:history.go(-1);">Batal</a>
                         <button type="submit" class="btn btn-warning btn-icon-text">Simpan</button>
                     </form>
 

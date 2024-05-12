@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,16 +18,38 @@
     <link rel="stylesheet" href="<?= base_url('plugins/icheck-bootstrap/icheck-bootstrap.min.css'); ?>">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url('css/style.css'); ?>">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
-<!--
-`body` tag options:
 
-  Apply one or more of the following classes to to the body tag
-  to get the desired effect
+<script>
+    $(document).ready(function () {
+        <?php if (session()->getFlashdata('error')): ?>
+            showNotification('<?php echo session()->getFlashdata('error'); ?>', 'error');
+        <?php endif; ?>
+        <?php if (session()->getFlashdata('success')): ?>
+            showNotification('<?php echo session()->getFlashdata('success'); ?>', 'success');
+        <?php endif; ?>
 
-  * sidebar-collapse
-  * sidebar-mini
--->
+        function showNotification(message, type) {
+            toastr.options = {
+                "closeButton": true,
+                "progressBar": true,
+                "positionClass": "toast-top-center",
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            };
+            toastr[type](message);
+        }
+    });
+</script>
 
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
@@ -54,7 +77,8 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="#" class="brand-link">
-                <img src="img/logosmp.png" alt="AdminLTE Logo" class="brand-image elevation-3" style="opacity: .8">
+                <img src="<?php echo base_url('img/logosmp.png'); ?>" alt="AdminLTE Logo"
+                    class="brand-image elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light" style="font-size: 80%;">SMPN 10 Bandar Lampung</span>
             </a>
 
@@ -63,8 +87,8 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="info">
-                        <a class="d-block">Emirssyah Putra</a>
-                        <a class="d-block">Guru BK</a>
+                        <a class="d-block"><?php echo $nama; ?></a>
+                        <a class="d-block"><?php echo $jabatan; ?></a>
                     </div>
                 </div>
 
@@ -75,8 +99,8 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
 
-               <li class="nav-item">
-                            <a href="<?php echo site_url('Dashboardg');?>" class="nav-link ">
+                        <li class="nav-item">
+                            <a href="<?php echo site_url('Dashboardg'); ?>" class="nav-link ">
                                 <i class="nav-icon fas fa-home"></i>
                                 <p>
                                     Dashboard
@@ -85,7 +109,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('datasiswakelas');?>" class="nav-link">
+                            <a href="<?php echo site_url('datasiswakelas'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-user"></i>
                                 <p>
                                     Data Siswa
@@ -94,7 +118,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('datalanggarkelas');?>" class="nav-link active">
+                            <a href="<?php echo site_url('datalanggarkelas'); ?>" class="nav-link active">
                                 <i class="nav-icon fas fa-book"></i>
                                 <p>
                                     Data Pelanggaran
@@ -103,7 +127,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('dataguru');?>" class="nav-link">
+                            <a href="<?php echo site_url('dataguru'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-chalkboard-teacher"></i>
                                 <p>
                                     Data Guru BK
@@ -111,7 +135,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('cetak');?>" class="nav-link" style="font-size: 90%;">
+                            <a href="<?php echo site_url('cetak'); ?>" class="nav-link" style="font-size: 90%;">
                                 <i class="nav-icon fas fa-print"></i>
                                 <p>
                                     Cetak Riwayat Pelanggaran
@@ -119,7 +143,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('surat');?>" class="nav-link" style="font-size: 90%;">
+                            <a href="<?php echo site_url('surat'); ?>" class="nav-link" style="font-size: 90%;">
                                 <i class="nav-icon fas fa-list"></i>
                                 <p>
                                     Daftar Surat Pemanggilan
@@ -127,7 +151,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('import');?>" class="nav-link">
+                            <a href="<?php echo site_url('import'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-upload"></i>
                                 <p>
                                     Import Data Siswa
@@ -135,7 +159,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('jadwal');?>" class="nav-link">
+                            <a href="<?php echo site_url('jadwal'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-calendar"></i>
                                 <p>
                                     Jadwal Bimbingan
@@ -168,62 +192,63 @@
             <!-- /.content-header -->
 
             <!-- Main content -->
-    <div class="content">
- 
-    <!-- Tabel Kelas -->
-    <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Kelas</h3>
+            <div class="content">
 
-                <div class="card-tools">
-                  <div class="input-group input-group-sm" style="width: 150px;">
-                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+                <!-- Tabel Kelas -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Kelas</h3>
 
-                    <div class="input-group-append">
-                      <button type="submit" class="btn btn-default">
-                        <i class="fas fa-search"></i>
-                      </button>
+                                <div class="card-tools">
+                                <form action="<?= site_url('datalanggarkelas/search'); ?>" method="post">
+                                        <div class="input-group input-group-sm" style="width: 150px;">
+                                            <input type="text" name="search" class="form-control float-right"
+                                                placeholder="Search">
+                                            <div class="input-group-append">
+                                                <button type="submit" class="btn btn-default">
+                                                    <i class="fas fa-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body table-responsive p-0">
+                                <table class="table table-hover text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th>Nomor</th>
+                                            <th>Kelas</th>
+                                            <th>Wali Kelas</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php $i = 1; ?>
+                                        <?php foreach ($kelasWali as $item): ?>
+                                            <tr>
+                                                <td><?= $i++; ?></td>
+                                                <td><?php echo $item['kelas']; ?></td>
+                                                <td><?php echo $item['wali_kelas']; ?></td>
+                                                <td><a href="<?php echo site_url('datalanggarsiswa/tampilkanDataSiswa/' . $item['kelas']); ?>"
+                                                        class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Detail</a>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
                     </div>
-                  </div>
                 </div>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body table-responsive p-0">
-                <table class="table table-hover text-nowrap">
-                  <thead>
-                    <tr>
-                      <th>Nomor</th>
-                      <th>Kelas</th>
-                      <th>Wali Kelas</th>
-                      <th>Aksi</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>8.9</td>
-                      <td>Dina</td>
-                      <td><a href="<?php echo site_url('datalanggarsiswa');?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Detail</a></td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>8.9</td>
-                      <td>Dina</td>
-                      <td><a href="<?php echo site_url('datalanggarsiswa');?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Detail</a></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
             </div>
-            <!-- /.card -->
-          </div>
+            <!-- /.content -->
         </div>
-    </div>
-    <!-- /.content -->
-  </div>
         <!-- /.content-wrapper -->
 
         <!-- Control Sidebar -->
@@ -246,20 +271,20 @@
     <!-- REQUIRED SCRIPTS -->
 
     <!-- jQuery -->
-    <script src="<?php echo base_url().'plugins/jquery/jquery.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'plugins/jquery/jquery.min.js' ?>"></script>
     <!-- Bootstrap 4 -->
-    <script src="<?php echo base_url().'plugins/bootstrap/js/bootstrap.bundle.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'plugins/bootstrap/js/bootstrap.bundle.min.js' ?>"></script>
 
     <!-- AdminLTE App -->
-    <script src="<?php echo base_url().'js/adminlte.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'js/adminlte.min.js' ?>"></script>
 
 
     <!-- OPTIONAL SCRIPTS -->
-    <script src="<?php echo base_url().'plugins/chart.js/Chart.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'plugins/chart.js/Chart.min.js' ?>"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="<?php echo base_url().'dist/js/demo.js'?>"></script>
+    <script src="<?php echo base_url() . 'dist/js/demo.js' ?>"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="<?php echo base_url().'dist/js/pages/dashboard3.js'?>"></script>
+    <script src="<?php echo base_url() . 'dist/js/pages/dashboard3.js' ?>"></script>
 </body>
 
 </html>

@@ -156,7 +156,7 @@
                         <input type="hidden" name="nisn" value="<?php echo $nisn; ?>">
 
 
-                        <a class="btn btn-danger btn-icon-text" href="<?php echo site_url('Dashboard'); ?>">Batal</a>
+                        <a class="btn btn-danger btn-icon-text" href="javascript:history.go(-1);">Batal</a>
                         <button type="submit" class="btn btn-warning btn-icon-text">Simpan</button>
                     </form>
 

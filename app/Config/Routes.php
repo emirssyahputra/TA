@@ -35,6 +35,12 @@ $routes->get('/', 'Home::index');
 $routes->add('logins/cek', 'Logins::cek');
 $routes->add('loging/cek', 'Loging::cek');
 $routes->add('Detailguru/(:num)', 'Detailguru::index/$1');
+$routes->add('datasiswadetail/(:num)', 'datasiswadetail::index/$1');
+$routes->add('datalanggar/(:num)', 'datalanggar::index/$1');
+$routes->add('tambahlanggar/(:num)', 'tambahlanggar::index/$1');
+$routes->post('/datasiswadetail/update/(:segment)', 'Datasiswadetail::update/$1');
+$routes->get('datalanggar/hapus/(:num)', 'Datalanggar::hapusRiwayat/$1');
+
 
 
 

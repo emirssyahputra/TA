@@ -64,8 +64,8 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="info">
-                        <a class="d-block">Emirssyah Putra</a>
-                        <a class="d-block">Guru BK</a>
+                        <a class="d-block"><?php echo $nama; ?></a>
+                        <a class="d-block"><?php echo $jabatan; ?></a>
                     </div>
                 </div>
 
@@ -76,8 +76,8 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
 
-               <li class="nav-item">
-                            <a href="<?php echo site_url('Dashboardg');?>" class="nav-link">
+                        <li class="nav-item">
+                            <a href="<?php echo site_url('Dashboardg'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-home"></i>
                                 <p>
                                     Dashboard
@@ -86,7 +86,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('datasiswakelas');?>" class="nav-link active">
+                            <a href="<?php echo site_url('datasiswakelas'); ?>" class="nav-link active">
                                 <i class="nav-icon fas fa-user"></i>
                                 <p>
                                     Data Siswa
@@ -95,7 +95,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('datalanggarkelas');?>" class="nav-link">
+                            <a href="<?php echo site_url('datalanggarkelas'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-book"></i>
                                 <p>
                                     Data Pelanggaran
@@ -104,7 +104,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('dataguru');?>" class="nav-link">
+                            <a href="<?php echo site_url('dataguru'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-chalkboard-teacher"></i>
                                 <p>
                                     Data Guru BK
@@ -112,7 +112,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('cetak');?>" class="nav-link" style="font-size: 90%;">
+                            <a href="<?php echo site_url('cetak'); ?>" class="nav-link" style="font-size: 90%;">
                                 <i class="nav-icon fas fa-print"></i>
                                 <p>
                                     Cetak Riwayat Pelanggaran
@@ -120,7 +120,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('surat');?>" class="nav-link" style="font-size: 90%;">
+                            <a href="<?php echo site_url('surat'); ?>" class="nav-link" style="font-size: 90%;">
                                 <i class="nav-icon fas fa-list"></i>
                                 <p>
                                     Daftar Surat Pemanggilan
@@ -128,7 +128,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('import');?>" class="nav-link">
+                            <a href="<?php echo site_url('import'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-upload"></i>
                                 <p>
                                     Import Data Siswa
@@ -136,7 +136,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('jadwal');?>" class="nav-link">
+                            <a href="<?php echo site_url('jadwal'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-calendar"></i>
                                 <p>
                                     Jadwal Bimbingan
@@ -171,7 +171,7 @@
             <!-- Main content -->
             <div class="content">
                 <div>
-                    <form class="forms-sample" method="post" action="">
+                    <form class="forms-sample" method="post" action="<?php echo site_url('tambahsiswa/simpan'); ?>">
                         <div class="form-group">
                             <label for="exampleInputUsername1">Nama</label>
                             <input type="text" class="form-control" id="exampleInputUsername1" name="nama"
@@ -190,8 +190,16 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputjenkel">Jenis Kelamin</label>
-                            <div class="Email-container">
-                                <input type="text" class="form-control" name="jenkel" placeholder="Jenis Kelamin" value=""
+                            <select class="form-control" name="jenkel" required>
+                                <option value="">Pilih Jenis Kelamin</option>
+                                <option value="Laki-Laki">Laki-laki</option>
+                                <option value="Perempuan">Perempuan</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputwali">Nomor Telepon Orang Tua</label>
+                            <div class="password-container">
+                                <input type="wali" class="form-control" name="ortu" placeholder="08xxx" value=""
                                     required style="padding-right: 50px;">
                             </div>
                         </div>
@@ -203,7 +211,7 @@
                             </div>
                         </div>
 
-                        <a class="btn btn-danger btn-icon-text" href="<?php echo site_url('Dashboard'); ?>">Batal</a>
+                        <a class="btn btn-danger btn-icon-text" href="javascript:history.go(-1);">Batal</a>
                         <button type="submit" class="btn btn-warning btn-icon-text">Simpan</button>
                     </form>
 
@@ -232,20 +240,20 @@
     <!-- REQUIRED SCRIPTS -->
 
     <!-- jQuery -->
-    <script src="<?php echo base_url().'plugins/jquery/jquery.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'plugins/jquery/jquery.min.js' ?>"></script>
     <!-- Bootstrap 4 -->
-    <script src="<?php echo base_url().'plugins/bootstrap/js/bootstrap.bundle.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'plugins/bootstrap/js/bootstrap.bundle.min.js' ?>"></script>
 
     <!-- AdminLTE App -->
-    <script src="<?php echo base_url().'js/adminlte.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'js/adminlte.min.js' ?>"></script>
 
 
     <!-- OPTIONAL SCRIPTS -->
-    <script src="<?php echo base_url().'plugins/chart.js/Chart.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'plugins/chart.js/Chart.min.js' ?>"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="<?php echo base_url().'dist/js/demo.js'?>"></script>
+    <script src="<?php echo base_url() . 'dist/js/demo.js' ?>"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="<?php echo base_url().'dist/js/pages/dashboard3.js'?>"></script>
+    <script src="<?php echo base_url() . 'dist/js/pages/dashboard3.js' ?>"></script>
 </body>
 
 </html>
