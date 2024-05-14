@@ -253,7 +253,7 @@
                                                 <td><?php echo $item['kelas']; ?></td>
                                                 <td><?php echo $item['nisn']; ?></td>
                                                 <td><?php echo $item['jenkel']; ?></td>
-                                                <td><?php echo $item['no_ortu']; ?></td>
+                                                <td>0<?php echo $item['no_ortu']; ?></td>
                                                 <td>
                                                     <a href="<?php echo site_url('datasiswadetail/' . $item['id_siswa']); ?>"
                                                         class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Edit</a>

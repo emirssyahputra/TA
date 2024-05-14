@@ -40,7 +40,10 @@ $routes->add('datalanggar/(:num)', 'datalanggar::index/$1');
 $routes->add('tambahlanggar/(:num)', 'tambahlanggar::index/$1');
 $routes->post('/datasiswadetail/update/(:segment)', 'Datasiswadetail::update/$1');
 $routes->get('datalanggar/hapus/(:num)', 'Datalanggar::hapusRiwayat/$1');
-
+$routes->post('import/unggah', 'Import::unggah');
+$routes->post('print/printPdf', 'Cetak::printPdf');
+$routes->get('cetakortu', 'Cetakortu::index');
+$routes->post('cetakortu/generate-pdf', 'Cetakortu::generatePdf');
 
 
 

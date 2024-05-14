@@ -64,8 +64,8 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="info">
-                        <a class="d-block">Emirssyah Putra</a>
-                        <a class="d-block">Guru BK</a>
+                        <a class="d-block"><?php echo $namaa; ?></a>
+                        <a class="d-block"><?php echo $jabatan; ?></a>
                     </div>
                 </div>
 
@@ -76,8 +76,8 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
 
-               <li class="nav-item">
-                            <a href="<?php echo site_url('Dashboardg');?>" class="nav-link ">
+                        <li class="nav-item">
+                            <a href="<?php echo site_url('Dashboardg'); ?>" class="nav-link ">
                                 <i class="nav-icon fas fa-home"></i>
                                 <p>
                                     Dashboard
@@ -86,7 +86,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('datasiswakelas');?>" class="nav-link">
+                            <a href="<?php echo site_url('datasiswakelas'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-user"></i>
                                 <p>
                                     Data Siswa
@@ -95,7 +95,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('datalanggarkelas');?>" class="nav-link ">
+                            <a href="<?php echo site_url('datalanggarkelas'); ?>" class="nav-link ">
                                 <i class="nav-icon fas fa-book"></i>
                                 <p>
                                     Data Pelanggaran
@@ -104,7 +104,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="<?php echo site_url('dataguru');?>" class="nav-link">
+                            <a href="<?php echo site_url('dataguru'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-chalkboard-teacher"></i>
                                 <p>
                                     Data Guru BK
@@ -112,7 +112,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('cetak');?>" class="nav-link" style="font-size: 90%;">
+                            <a href="<?php echo site_url('cetak'); ?>" class="nav-link" style="font-size: 90%;">
                                 <i class="nav-icon fas fa-print"></i>
                                 <p>
                                     Cetak Riwayat Pelanggaran
@@ -120,7 +120,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('surat');?>" class="nav-link active" style="font-size: 90%;">
+                            <a href="<?php echo site_url('surat'); ?>" class="nav-link active" style="font-size: 90%;">
                                 <i class="nav-icon fas fa-list"></i>
                                 <p>
                                     Daftar Surat Pemanggilan
@@ -128,7 +128,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('import');?>" class="nav-link">
+                            <a href="<?php echo site_url('import'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-upload"></i>
                                 <p>
                                     Import Data Siswa
@@ -136,7 +136,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo site_url('jadwal');?>" class="nav-link">
+                            <a href="<?php echo site_url('jadwal'); ?>" class="nav-link">
                                 <i class="nav-icon fas fa-calendar"></i>
                                 <p>
                                     Jadwal Bimbingan
@@ -176,19 +176,8 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                            <a href="<?php echo site_url('cetakortu'); ?>" class="btn btn-success"><i class="fas fa-print"></i> Cetak Surat Pemanggilan</a>
-                                <div class="card-tools">
-                                    <div class="input-group input-group-sm" style="width: 150px;">
-                                        <input type="text" name="table_search" class="form-control float-right"
-                                            placeholder="Search">
-
-                                        <div class="input-group-append">
-                                            <button type="submit" class="btn btn-default">
-                                                <i class="fas fa-search"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a href="<?php echo site_url('cetakortu'); ?>" class="btn btn-success"><i
+                                        class="fas fa-print"></i> Cetak Surat Pemanggilan</a>
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body table-responsive p-0">
@@ -199,32 +188,39 @@
                                             <th>Nama</th>
                                             <th>Kelas</th>
                                             <th>Poin</th>
+                                            <th>Sanksi</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Shiella Dwi Lestari</td>
-                                            <td>8.8</td>
-                                            <td>25</td>
-                                            <td>
-                                                <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
-                                                    data-target="#deleteModal"><i class="fab fa-whatsapp"></i>
-                                                    Whatsapp</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Emirssyah Putra</td>
-                                            <td>8.1</td>
-                                            <td>25</td>
-                                            <td>
-                                                <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
-                                                    data-target="#deleteModal"><i class="fab fa-whatsapp"></i>
-                                                    Whatsapp</button>
-                                            </td>
-                                        </tr>
+                                        <?php foreach ($siswa as $key => $s): ?>
+                                            <tr>
+                                                <td><?= $key + 1 ?></td>
+                                                <td><?= $s['nama'] ?></td>
+                                                <td><?= $s['kelas'] ?></td>
+                                                <td><?= $s['poin'] ?></td>
+                                                <td><?= $s['kategori_sanksi'] ?></td>
+                                                <td>
+                                                    <?php
+                                                    // Ambil nomor orang tua dari database
+                                                    $nomor_ortu = $s['no_ortu'];
+
+                                                    // Ubah format nomor jika dimulai dengan "08" menjadi "+62"
+                                                    if (substr($nomor_ortu, 0, 1) === '8') {
+                                                        $nomor_ortu = '+62' . $nomor_ortu;
+                                                    }
+                                                    // Buat link WhatsApp
+                                                    $link_whatsapp = 'https://wa.me/' . $nomor_ortu;
+
+                                                    // Tampilkan tombol WhatsApp dengan link
+                                                    ?>
+                                                    <a href="<?= $link_whatsapp ?>" class="btn btn-success btn-sm"
+                                                        target="_blank">
+                                                        <i class="fab fa-whatsapp"></i> Whatsapp
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>
                                     </tbody>
                                 </table>
 
@@ -259,20 +255,20 @@
     <!-- REQUIRED SCRIPTS -->
 
     <!-- jQuery -->
-    <script src="<?php echo base_url().'plugins/jquery/jquery.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'plugins/jquery/jquery.min.js' ?>"></script>
     <!-- Bootstrap 4 -->
-    <script src="<?php echo base_url().'plugins/bootstrap/js/bootstrap.bundle.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'plugins/bootstrap/js/bootstrap.bundle.min.js' ?>"></script>
 
     <!-- AdminLTE App -->
-    <script src="<?php echo base_url().'js/adminlte.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'js/adminlte.min.js' ?>"></script>
 
 
     <!-- OPTIONAL SCRIPTS -->
-    <script src="<?php echo base_url().'plugins/chart.js/Chart.min.js'?>"></script>
+    <script src="<?php echo base_url() . 'plugins/chart.js/Chart.min.js' ?>"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="<?php echo base_url().'dist/js/demo.js'?>"></script>
+    <script src="<?php echo base_url() . 'dist/js/demo.js' ?>"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="<?php echo base_url().'dist/js/pages/dashboard3.js'?>"></script>
+    <script src="<?php echo base_url() . 'dist/js/pages/dashboard3.js' ?>"></script>
 </body>
 
 </html>

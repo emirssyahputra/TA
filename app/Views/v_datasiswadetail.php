@@ -201,6 +201,7 @@
                                 <input type="wali" class="form-control" name="ortu" placeholder="ortu" value="<?= $siswa['no_ortu']; ?>"" 
                                     required style="padding-right: 50px;">
                             </div>
+                            <p>Contoh : 81332xxxx</p>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputwali">Wali Kelas</label>

@@ -64,8 +64,8 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="info">
-                        <a class="d-block">Emirssyah Putra</a>
-                        <a class="d-block">Guru BK</a>
+                         <a class="d-block"><?php echo $nama; ?></a>
+                        <a class="d-block"><?php echo $jabatan; ?></a>
                     </div>
                 </div>
 
@@ -170,9 +170,9 @@
 
             <!-- Main content -->
             <div class="content">
-                <form action="upload.php" method="post" enctype="multipart/form-data">
+                <form action="<?= site_url('import/unggah') ?>" method="post" enctype="multipart/form-data">
                     <label for="excelFile">Pilih file Excel:</label><br>
-                    <input type="file" id="excelFile" name="excelFile" accept=".xls,.xlsx" /><br>
+                    <input type="file" id="file_excel" name="file_excel" accept=".xls,.xlsx" /><br>
                     <br>
                     <button type="submit" class="btn btn-warning btn-icon-text">Unggah</button>
                 </form>

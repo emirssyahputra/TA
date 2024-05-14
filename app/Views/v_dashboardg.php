@@ -17,16 +17,38 @@
     <link rel="stylesheet" href="<?= base_url('plugins/icheck-bootstrap/icheck-bootstrap.min.css'); ?>">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url('css/style.css'); ?>">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
-<!--
-`body` tag options:
 
-  Apply one or more of the following classes to to the body tag
-  to get the desired effect
+<script>
+  $(document).ready(function () {
+    <?php if (session()->getFlashdata('error')): ?>
+      showNotification('<?php echo session()->getFlashdata('error'); ?>', 'error');
+    <?php endif; ?>
+    <?php if (session()->getFlashdata('success')): ?>
+      showNotification('<?php echo session()->getFlashdata('success'); ?>', 'success');
+    <?php endif; ?>
 
-  * sidebar-collapse
-  * sidebar-mini
--->
+    function showNotification(message, type) {
+      toastr.options = {
+        "closeButton": true,
+        "progressBar": true,
+        "positionClass": "toast-top-center",
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+      };
+      toastr[type](message);
+    }
+  });
+</script>
 
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
