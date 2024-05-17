@@ -59,7 +59,7 @@ class Tambahsiswa extends BaseController
                 'nisn' => $nisn,
                 'jenkel' => $jenkel,
                 'no_ortu' => $ortu,
-                'wali' => $wali
+                'wali' => $wali,
             ];
 
             // Inisialisasi model Siswa

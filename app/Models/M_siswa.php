@@ -9,7 +9,7 @@ class M_siswa extends Model
     protected $table = 'siswa';
     protected $primaryKey = 'id_siswa';
     protected $useAutoIncrement = true;
-    protected $allowedFields = ['email', 'password', 'nama','nisn','kelas','no_ortu','jenkel','poin'];
+    protected $allowedFields = ['email', 'password', 'nama','nisn','kelas','no_ortu','jenkel','poin','wali'];
 
     public function searchData($keyword)
     {

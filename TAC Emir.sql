@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 12 Bulan Mei 2024 pada 13.48
+-- Waktu pembuatan: 15 Bulan Mei 2024 pada 16.42
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -96,6 +96,29 @@ INSERT INTO `pengguna` (`id_pengguna`, `email`, `password`, `id_role`, `nisn`, `
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `riwayat`
+--
+
+CREATE TABLE `riwayat` (
+  `id_riwayat` int(11) NOT NULL,
+  `nisn` varchar(100) NOT NULL,
+  `pelanggaran` varchar(100) NOT NULL,
+  `tanggal` date NOT NULL,
+  `poin` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `riwayat`
+--
+
+INSERT INTO `riwayat` (`id_riwayat`, `nisn`, `pelanggaran`, `tanggal`, `poin`) VALUES
+(8, '12341241', 'Narkoba', '2024-05-07', 70),
+(10, '123456', 'Narkoba', '2024-05-14', 50),
+(11, '123456', 'Bolos', '2024-05-08', 30);
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `siswa`
 --
 
@@ -106,18 +129,21 @@ CREATE TABLE `siswa` (
   `jenkel` varchar(100) NOT NULL,
   `no_ortu` varchar(100) NOT NULL,
   `wali` varchar(100) NOT NULL,
-  `kelas` varchar(100) NOT NULL
+  `kelas` varchar(100) NOT NULL,
+  `poin` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data untuk tabel `siswa`
 --
 
-INSERT INTO `siswa` (`id_siswa`, `nama`, `nisn`, `jenkel`, `no_ortu`, `wali`, `kelas`) VALUES
-(1, 'Emirssyah Putra', 123456, 'Laki-Laki', '081278564666', 'Dina', '8.1'),
-(2, 'Merysah', 12313, 'Perempuan', '081368620646', 'Yani', '8.2'),
-(4, 'Haikal', 12312314, 'Laki-Laki', '081364584525', 'Suhartoyo', '9.1'),
-(5, 'sila', 12341241, 'Perempuan', '081364584525', '', '8.1');
+INSERT INTO `siswa` (`id_siswa`, `nama`, `nisn`, `jenkel`, `no_ortu`, `wali`, `kelas`, `poin`) VALUES
+(1, 'Emirssyah Putra', 123456, 'Laki-Laki', '81278564666', 'Dina', '8.1', 80),
+(2, 'Merysah', 12313, 'Perempuan', '81368620646', 'Yani', '8.2', 0),
+(4, 'Haikal', 12312314, 'Laki-Laki', '81364584525', 'Suhartoyo', '9.1', 0),
+(5, 'sila', 12341241, 'Perempuan', '81364584525', 'Dina', '8.1', 70),
+(8, 'Sapira', 12454, 'Perempuan', '81362463624', 'Dina', '8.1', 0),
+(9, 'Pandu', 12343, 'Laki-Laki', '81478542424', 'Dina', '8.1', 0);
 
 --
 -- Indexes for dumped tables
@@ -140,6 +166,12 @@ ALTER TABLE `jadwal`
 --
 ALTER TABLE `pengguna`
   ADD PRIMARY KEY (`id_pengguna`);
+
+--
+-- Indeks untuk tabel `riwayat`
+--
+ALTER TABLE `riwayat`
+  ADD PRIMARY KEY (`id_riwayat`);
 
 --
 -- Indeks untuk tabel `siswa`
@@ -170,10 +202,16 @@ ALTER TABLE `pengguna`
   MODIFY `id_pengguna` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT untuk tabel `riwayat`
+--
+ALTER TABLE `riwayat`
+  MODIFY `id_riwayat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
 -- AUTO_INCREMENT untuk tabel `siswa`
 --
 ALTER TABLE `siswa`
-  MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

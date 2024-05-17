@@ -141,6 +141,7 @@
                         <div class="form-group">
                             <label for="gurubk">Guru BK</label>
                             <select class="form-control" id="gurubk" name="gurubk" required>
+                                <option value="">Pilih Guru BK</option>
                                 <?php foreach ($daftar_guru as $guru): ?>
                                     <option value="<?= $guru['nama']; ?>"><?= $guru['nama']; ?></option>
                                 <?php endforeach; ?>
@@ -201,6 +202,17 @@
     <script src="<?php echo base_url() . 'dist/js/demo.js' ?>"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="<?php echo base_url() . 'dist/js/pages/dashboard3.js' ?>"></script>
+    <script>
+    function validateForm() {
+        var selectedOption = document.getElementById("gurubk").value;
+        if (selectedOption === "") {
+            alert("Mohon pilih seorang Guru BK");
+            return false; // Mencegah formulir dikirim jika opsi tidak dipilih
+        }
+        return true; // Mengizinkan formulir dikirim jika opsi telah dipilih
+    }
+</script>
+
 </body>
 
 </html>

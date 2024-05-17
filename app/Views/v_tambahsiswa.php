@@ -199,14 +199,14 @@
                         <div class="form-group">
                             <label for="exampleInputwali">Nomor Telepon Orang Tua</label>
                             <div class="password-container">
-                                <input type="wali" class="form-control" name="ortu" placeholder="08xxx" value=""
+                                <input type="wali" class="form-control" name="ortu" placeholder="contoh: 81385xxx" value=""
                                     required style="padding-right: 50px;">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputwali">Wali Kelas</label>
                             <div class="password-container">
-                                <input type="wali" class="form-control" name="wali" placeholder="Wali Kelas" value=""
+                                <input type="text" class="form-control" name="wali" placeholder="Wali Kelas" value=""
                                     required style="padding-right: 50px;">
                             </div>
                         </div>

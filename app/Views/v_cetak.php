@@ -179,7 +179,7 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail">Kelas</label>
-                            <input type="list" class="form-control" name="kelas" placeholder="kelas" value="" required>
+                            <input type="list" class="form-control" name="kelas" placeholder="contoh: 8.1" value="" required>
                         </div>
                         <a class="btn btn-danger btn-icon-text" href="<?php echo site_url('Dashboardg'); ?>">Batal</a>
                         <button type="submit" class="btn btn-warning btn-icon-text">

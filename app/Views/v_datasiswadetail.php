@@ -198,15 +198,14 @@
                         <div class="form-group">
                             <label for="exampleInputwali">Nomor Telepon Orang Tua</label>
                             <div class="password-container">
-                                <input type="wali" class="form-control" name="ortu" placeholder="ortu" value="<?= $siswa['no_ortu']; ?>"" 
+                                <input type="wali" class="form-control" name="ortu" placeholder="Contoh : 81332xxxx" value="<?= $siswa['no_ortu']; ?>"" 
                                     required style="padding-right: 50px;">
                             </div>
-                            <p>Contoh : 81332xxxx</p>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputwali">Wali Kelas</label>
                             <div class="password-container">
-                                <input type="wali" class="form-control" name="wali" placeholder="Wali Kelas" value="<?= $siswa['wali']; ?>""
+                                <input type="text" class="form-control" name="wali" placeholder="Wali Kelas" value="<?= $siswa['wali']; ?>""
                                     required style="padding-right: 50px;">
                             </div>
                         </div>
