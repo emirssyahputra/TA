@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Bulan Mei 2024 pada 16.42
+-- Waktu pembuatan: 17 Bulan Mei 2024 pada 19.21
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -67,7 +67,8 @@ CREATE TABLE `jadwal` (
 
 INSERT INTO `jadwal` (`id_jadwal`, `nama`, `nisn`, `kelas`, `guru`, `waktu`, `status`) VALUES
 (4, 'Emirssyah Putra', '123456', '8.1', 'Haikal', '2024-05-15 01:50:00', 'Diterima'),
-(6, 'Emirssyah Putra', '123456', '8.1', 'Emirssyah Putra', '2024-05-14 02:32:00', 'Ditolak');
+(6, 'Emirssyah Putra', '123456', '8.1', 'Emirssyah Putra', '2024-05-14 02:32:00', 'Ditolak'),
+(7, 'Emirssyah Putra', '123456', '8.1', 'Emirssyah Putra', '2024-05-17 13:35:00', 'Diproses');
 
 -- --------------------------------------------------------
 
@@ -143,7 +144,9 @@ INSERT INTO `siswa` (`id_siswa`, `nama`, `nisn`, `jenkel`, `no_ortu`, `wali`, `k
 (4, 'Haikal', 12312314, 'Laki-Laki', '81364584525', 'Suhartoyo', '9.1', 0),
 (5, 'sila', 12341241, 'Perempuan', '81364584525', 'Dina', '8.1', 70),
 (8, 'Sapira', 12454, 'Perempuan', '81362463624', 'Dina', '8.1', 0),
-(9, 'Pandu', 12343, 'Laki-Laki', '81478542424', 'Dina', '8.1', 0);
+(9, 'Pandu', 12343, 'Laki-Laki', '81478542424', 'Dina', '8.1', 0),
+(10, 'Fauzan', 1231415, 'Laki-Laki', '85665453523', 'Suhartoyo', '9.1', 0),
+(12, 'Emirssyah Putra', 123141412, 'Laki-Laki', '81364584525', 'Suhartoyo', '9.1', 0);
 
 --
 -- Indexes for dumped tables
@@ -193,7 +196,7 @@ ALTER TABLE `guru`
 -- AUTO_INCREMENT untuk tabel `jadwal`
 --
 ALTER TABLE `jadwal`
-  MODIFY `id_jadwal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_jadwal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `pengguna`
@@ -211,7 +214,7 @@ ALTER TABLE `riwayat`
 -- AUTO_INCREMENT untuk tabel `siswa`
 --
 ALTER TABLE `siswa`
-  MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
